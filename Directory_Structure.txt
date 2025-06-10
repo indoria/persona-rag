@@ -1,0 +1,44 @@
+persona_poc/
+│
+├── app/                           # Flask application code & API endpoints
+│   ├── __init__.py
+│   ├── api.py
+│   ├── persona_engine.py
+│   ├── pitch_analysis.py
+│   ├── utils.py
+│   └── scripts
+│
+├── data_ingestion/                # Data ingestion, processing, and knowledge graph building
+│   ├── __init__.py
+│   ├── ingest.py
+│   ├── text_processing.py
+│   ├── feature_extraction.py
+│   ├── lda_topic_model.py
+│   └── simulated_corpus/          # Simulated journalist articles and transcripts
+│       ├── alice_article1.txt
+│       ├── alice_transcript1.txt
+│       ├── bob_article1.txt
+│       └── bob_transcript1.txt
+│
+├── db/                            # SQLite and ChromaDB integration
+│   ├── __init__.py
+│   ├── schema.sql
+│   ├── sqlite_utils.py
+│   └── chroma_utils.py
+│
+├── models/                        # Fine-tuned persona models and tokenizer files
+│   └── (populated after Phase 2)
+│
+├── frontend/                      # Minimal UI and assets
+│   ├── index.html
+│   ├── style.css
+│   └── main.js
+│
+├── tests/                         # Unit and integration tests
+│   ├── test_data_ingestion.py
+│   ├── test_pitch_analysis.py
+│   └── test_persona_engine.py
+│
+├── requirements.txt
+├── README.md
+└── run.py                         # Entry point for the Flask app

@@ -1,0 +1,16 @@
+body {
+    background: #f3f4f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2rem;
+}
+button {
+    transition: background 0.2s;
+}
+textarea, select, input {
+    border: 1px solid #d1d5db;
+}
