@@ -9,3 +9,4 @@ numpy
 transformers[torch]>=4.28.0
 torch>=2.0.0
 accelerate>=0.26.0
+pysqlite3-binary

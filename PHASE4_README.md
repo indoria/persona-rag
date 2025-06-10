@@ -73,7 +73,7 @@ def test_analyze_pitch_entities():
 ```python name=tests/test_persona_engine.py
 def test_generate_persona_response_smoke():
     from app.persona_engine import generate_persona_response
-    import sqlite3, chromadb
+    import pysqlite3 as sqlite3, chromadb
     db_conn = sqlite3.connect("persona.db")
     chroma_client = chromadb.PersistentClient("pr_journalist_chroma")
     # Use a valid journalist_id from your DB

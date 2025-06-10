@@ -1,6 +1,6 @@
 import logging
 from flask import Flask, request, jsonify
-import sqlite3
+import pysqlite3 as sqlite3
 import chromadb
 
 from app.pitch_analysis import analyze_pitch

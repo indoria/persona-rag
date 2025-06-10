@@ -53,3 +53,21 @@
 ```
 scikit learn vs pytorch vs tensorflow vs keras vs gensim
 ```
+
+```
+Updating python (and in turn sqlite3 as well)
+
+curl -fsSL https://pyenv.run | bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+source ~/.bashrc
+pyenv update
+
+pyenv install --list
+pyenv install <version>
+pyenv global <version>
+pyenv local <version>
+pyenv version
+pyenv versions
+```
