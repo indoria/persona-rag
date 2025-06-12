@@ -1,0 +1,485 @@
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
+:root {
+    /* Colors - Light Mode Defaults */
+    --primary-color: #007bff; /* Blue */
+    --primary-color-hover: #0056b3;
+    --secondary-color: #6c757d; /* Gray */
+    --text-color: #343a40; /* Dark text */
+    --background-color: #f8f9fa; /* Light background */
+    --surface-color: #ffffff; /* Card/component background */
+    --border-color: #dee2e6; /* Light border */
+    --selection-border-color: #007bff; /* Primary color for selection */
+    --focus-ring-color: rgba(0, 123, 255, 0.25); /* Focus ring */
+    --error-color: #dc3545; /* Red */
+    --success-color: #28a745; /* Green */
+
+    /* Spacing */
+    --spacing-xxs: 0.25rem; /* 4px */
+    --spacing-xs: 0.5rem;   /* 8px */
+    --spacing-sm: 1rem;     /* 16px */
+    --spacing-md: 1.5rem;   /* 24px */
+    --spacing-lg: 2rem;     /* 32px */
+    --spacing-xl: 3rem;     /* 48px */
+
+    /* Typography */
+    --font-family-base: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --heading-font-family: 'Montserrat', sans-serif; /* Example for headings */
+    --font-size-base: 1rem; /* 16px */
+    --line-height-base: 1.6;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+
+    /* Box Shadows */
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --box-shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --box-shadow-inset: inset 0 1px 2px rgba(0,0,0,.075);
+
+    /* Border Radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+    --transition-timing: ease-in-out;
+
+    --header-background-color: transparent;
+    --footer-background-color: transparent;
+}
+
+/* Dark Mode Variables */
+html.dark-mode {
+    --primary-color: #8ab4f8; /* Lighter blue for dark mode */
+    --primary-color-hover: #6792ed;
+    --secondary-color: #adb5bd; /* Lighter gray */
+    --text-color: #e0e0e0; /* Light text */
+    --background-color: #202124; /* Dark background */
+    --surface-color: #2d2e30; /* Darker card/component background */
+    --border-color: #4a4a4a; /* Dark border */
+    --selection-border-color: #8ab4f8; /* Primary color for selection */
+    --focus-ring-color: rgba(138, 180, 248, 0.25); /* Focus ring */
+    /* Error and success colors typically remain universal or are adjusted slightly for contrast */
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+    --box-shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                color var(--transition-speed) var(--transition-timing);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: var(--h1-font-size); }
+h2 { font-size: var(--h2-font-size); }
+h3 { font-size: var(--h3-font-size); }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) var(--transition-timing);
+}
+a:hover {
+    color: var(--primary-color-hover);
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+}
+
+/* Bootstrap-like Breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+main {
+    flex-grow: 1;
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+section {
+    background-color: var(--surface-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                border-color var(--transition-speed) var(--transition-timing),
+                box-shadow var(--transition-speed) var(--transition-timing);
+}
+
+.section-title {
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xxs);
+}
+
+.section-description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ==========================================================================
+   Header & Footer
+   ========================================================================== */
+header {
+    background-color: var(--header-background-color);
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow-sm);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                border-color var(--transition-speed) var(--transition-timing),
+                box-shadow var(--transition-speed) var(--transition-timing);
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: var(--h2-font-size);
+}
+
+footer {
+    text-align: center;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--footer-background-color);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                border-color var(--transition-speed) var(--transition-timing);
+}
+
+/* ==========================================================================
+   Theme Toggle Button
+   ========================================================================== */
+.theme-toggle-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                color var(--transition-speed) var(--transition-timing),
+                border-color var(--transition-speed) var(--transition-timing);
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--primary-color-hover);
+    color: white;
+    border-color: var(--primary-color-hover);
+}
+
+.theme-toggle-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+/* Hide one icon based on theme */
+html:not(.dark-mode) .theme-toggle-btn .fa-moon {
+    display: none;
+}
+html.dark-mode .theme-toggle-btn .fa-sun {
+    display: none;
+}
+
+/* ==========================================================================
+   AI Personas List
+   ========================================================================== */
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Mobile-first: start with 100px min */
+    gap: var(--spacing-sm);
+    justify-content: center; /* Center items if they don't fill the grid */
+    padding: var(--spacing-xs);
+}
+
+/* Responsive grid adjustments */
+@media (min-width: 576px) {
+    .persona-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .persona-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+
+@media (min-width: 992px) {
+    .persona-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+.persona-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-color);
+    transition: all var(--transition-speed) var(--transition-timing);
+    position: relative; /* For the checkmark icon */
+}
+
+.persona-item:hover {
+    background-color: var(--border-color);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.persona-item.selected {
+    border-color: var(--selection-border-color);
+    box-shadow: var(--box-shadow-md);
+    background-color: var(--primary-color-hover); /* A slightly darker shade when selected */
+    color: white;
+}
+
+.persona-item.selected .persona-name,
+.persona-item.selected .persona-role {
+    color: white;
+}
+
+.persona-item:focus {
+    outline: none;
+    border-color: var(--focus-ring-color); /* Highlight for keyboard navigation */
+    box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+.persona-avatar {
+    width: 80px;  /* Choose size which would look best - fixed size */
+    height: 80px; /* Choose size which would look best - fixed size */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color); /* Border around avatar */
+    transition: border-color var(--transition-speed) var(--transition-timing);
+}
+
+.persona-item.selected .persona-avatar {
+    border-color: white; /* White border for selected avatar */
+}
+
+.persona-name {
+    margin-top: var(--spacing-xxs);
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.persona-role {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xxs);
+}
+
+.persona-item .selected-icon {
+    position: absolute;
+    top: var(--spacing-xxs);
+    right: var(--spacing-xxs);
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    display: none; /* Hidden by default */
+}
+
+.persona-item.selected .selected-icon {
+    display: block; /* Show when selected */
+}
+
+/* ==========================================================================
+   Text Area & Button
+   ========================================================================== */
+.text-area {
+    width: 100%;
+    min-height: 150px;
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    resize: vertical; /* Allow vertical resizing */
+    box-shadow: var(--box-shadow-inset);
+    transition: all var(--transition-speed) var(--transition-timing);
+}
+
+.text-area::placeholder {
+    color: var(--secondary-color);
+    opacity: 0.7;
+}
+
+.text-area:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                box-shadow var(--transition-speed) var(--transition-timing);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-color-hover);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.primary-button:disabled {
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+.primary-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+/* ==========================================================================
+   Responses Display
+   ========================================================================== */
+.responses-display {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs);
+}
+
+.response-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-sm);
+    box-shadow: var(--box-shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxs);
+    transition: background-color var(--transition-speed) var(--transition-timing),
+                border-color var(--transition-speed) var(--transition-timing);
+}
+
+.response-card strong {
+    color: var(--primary-color);
+}
+
+.response-card p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.status-message {
+    text-align: center;
+    padding: var(--spacing-xs);
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.status-message.error {
+    color: var(--error-color);
+    font-weight: bold;
+}
+
+.status-message.loading {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.loading-spinner {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: var(--spacing-sm);
+}
+
+.loading-spinner .fas {
+    margin-right: var(--spacing-xxs);
+}
+
+/* Hide no-responses message when content is present */
+.responses-display:not(:empty) .no-responses {
+    display: none;
+}

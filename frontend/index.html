@@ -2,19 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PR Journalist AI Persona POC</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DialSquare : AI Persona</title>
+    <meta name="description" content="Interact with various AI personas to generate responses based on your text input. A modern, responsive SPA built with vanilla JS & CSS.">
+    <meta name="keywords" content="AI, personas, chat">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-sans">
-    <div class="container mx-auto max-w-lg mt-10 bg-white rounded shadow p-8">
-        <h1 class="text-2xl font-bold mb-4">PR Journalist AI Persona POC</h1>
-        <label for="journalist" class="block font-semibold mb-1">Select Journalist Persona:</label>
-        <select id="journalist" class="w-full border mb-4 p-2 rounded"></select>
-        <label for="pitch" class="block font-semibold mb-1">Your PR Pitch:</label>
-        <textarea id="pitch" class="w-full border p-2 rounded mb-4" rows="6" placeholder="Paste your pitch here..."></textarea>
-        <button id="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Generate Response</button>
-        <div id="output" class="mt-6 p-4 rounded bg-gray-50 border"></div>
-    </div>
-    <script src="main.js"></script>
+<body>
+    <header>
+        <h1>AI Persona Generator</h1>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+            <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button>
+    </header>
+
+    <main class="container">
+        <section class="personas-section">
+            <h2 class="section-title">Choose AI Personas <i class="fas fa-user-circle"></i></h2>
+            <p class="section-description">Select one or more AI personas to tailor your response.</p>
+            <div id="persona-list" class="persona-grid">
+                <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Loading personas...</div>
+            </div>
+        </section>
+
+        <section class="pitch-section">
+            <h2 class="section-title">Enter Your Pitch <i class="fas fa-keyboard"></i></h2>
+            <textarea id="pitch-text" class="text-area" placeholder="Write your text pitch here..."></textarea>
+            <button id="send-pitch-btn" class="primary-button">
+                Send Pitch <i class="fas fa-paper-plane"></i>
+            </button>
+            <p id="pitch-status-message" class="status-message"></p>
+        </section>
+
+        <section class="responses-section">
+            <h2 class="section-title">Generated Responses <i class="fas fa-comment-dots"></i></h2>
+            <div id="responses-container" class="responses-display">
+                <p class="status-message no-responses">Responses will appear here after you send a pitch.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; DialSquare : 2025 AI Persona App.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

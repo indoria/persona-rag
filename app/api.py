@@ -1,6 +1,15 @@
 import logging
 from flask import Flask, request, jsonify
-import pysqlite3 as sqlite3
+
+try:
+    import sys
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules['pysqlite3']
+    print("Successfully swapped sqlite3 module with pysqlite3 for ChromaDB compatibility.")
+except ImportError:
+    print("pysqlite3 not found. Falling back to default sqlite3. ChromaDB might still throw errors.")
+import sqlite3
+
 import chromadb
 
 from app.pitch_analysis import analyze_pitch
