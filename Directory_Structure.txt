@@ -15,10 +15,10 @@ persona_poc/
 │   ├── feature_extraction.py
 │   ├── lda_topic_model.py
 │   └── simulated_corpus/          # Simulated journalist articles and transcripts
-│       ├── alice_article1.txt
-│       ├── alice_transcript1.txt
-│       ├── bob_article1.txt
-│       └── bob_transcript1.txt
+│       ├── hitchens.txt
+│       ├── htichens_transcript1.txt
+│       ├── barkha_article1.txt
+│       └── barkha_transcript1.txt
 │
 ├── db/                            # SQLite and ChromaDB integration
 │   ├── __init__.py

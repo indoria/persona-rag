@@ -14,7 +14,7 @@ def test_list_journalists(client):
     assert resp.status_code == 200
     data = resp.get_json()
     assert isinstance(data, list)
-    assert any("Alice" in j["name"] or "Bob" in j["name"] for j in data)
+    assert any("Hitchens" in j["name"] or "Barkha" in j["name"] for j in data)
 
 def test_generate_response_api(client):
     # First, get a journalist ID

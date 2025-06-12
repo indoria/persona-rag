@@ -1,3 +1,0 @@
-Title: AI in Healthcare: Promise and Peril
-By Bob
-Artificial Intelligence is transforming diagnostics and patient care. Startups like HealthAI are using deep learning to detect diseases earlier than ever before. Yet, concerns about data privacy and algorithmic bias persist, requiring robust oversight.

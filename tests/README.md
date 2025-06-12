@@ -28,7 +28,7 @@ python -m pytest tests/
 2025-06-10 04:32:15,032 INFO app.api : Received generate_response for journalist_id=1
 2025-06-10 04:32:15,045 ERROR app.persona_engine : Journalist ID 9999 not found in DB
 2025-06-10 04:32:15,053 WARNING app.api : Missing journalist_id or pitch_text in request
-2025-06-10 04:32:15,123 INFO data_ingestion.ingest : Ingested document alice_article1.txt for journalist Alice
+2025-06-10 04:32:15,123 INFO data_ingestion.ingest : Ingested document hitchens_article1.txt for journalist Hitchens
 ```
 
 Check these logs for debugging and tracing application flow.
