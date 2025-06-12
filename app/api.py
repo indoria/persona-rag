@@ -57,15 +57,8 @@ def journalists():
     logger.info(f"Fetched journalists: {len(res)} found")
     return jsonify(res)
 
-@app.route("/generate_response", methods=["POST"])
-def generate_response():
-    data = request.json
-    journalist_id = data.get("journalist_id")
-    pitch_text = data.get("pitch_text")
-    logger.info(f"Received generate_response for journalist_id={journalist_id}")
-    if not journalist_id or not pitch_text:
-        logger.warning("Missing journalist_id or pitch_text in request")
-        return jsonify({"error": "journalist_id and pitch_text required"}), 400
+def _generate_response(journalist_id, pitch_text):
+    db_conn = None
     try:
         db_conn = get_db_conn()
         chroma_client = get_chroma_client()
@@ -78,9 +71,34 @@ def generate_response():
             max_length=128,
             temperature=0.8,
         )
-        db_conn.close()
-        logger.info("Generated persona response successfully")
-        return jsonify({"response": response})
+        return {"status": "success", "response": response}
     except Exception as e:
-        logger.exception(f"Error generating persona response: {str(e)}")
-        return jsonify({"error": "Internal server error"}), 500
+        logger.error(f"Error generating persona response for journalist_id={journalist_id}: {str(e)}")
+        return {"status": "error", "message": f"Failed to generate response: {str(e)}"}
+    finally:
+        if db_conn:
+            db_conn.close()
+
+@app.route("/generate_response", methods=["POST"])
+def generate_response():
+    data = request.json
+    journalist_ids = data.get("journalist_ids")
+    pitch_text = data.get("pitch_text")
+
+    logger.info(f"Received generate_responses for journalist_ids={journalist_ids}")
+
+    if not isinstance(journalist_ids, list) or not journalist_ids:
+        logger.warning("Missing or invalid 'journalist_ids' (expected a non-empty list) in request")
+        return jsonify({"error": "An array of 'journalist_ids' is required"}), 400
+    if not pitch_text:
+        logger.warning("Missing 'pitch_text' in request")
+        return jsonify({"error": "'pitch_text' is required"}), 400
+
+    results = {}
+    for j_id in journalist_ids:
+        current_journalist_id = str(j_id)
+        logger.info(f"Processing response for individual journalist_id: {current_journalist_id}")
+        results[current_journalist_id] = _generate_response(current_journalist_id, pitch_text)
+
+    logger.info("Finished processing all journalist responses.")
+    return jsonify(results), 200

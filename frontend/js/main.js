@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchJournalists = async () => {
         try {
-            const response = await fetch('/journalists'); // Make the GET request to /journalists
+            const response = await fetch('/journalists');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -73,24 +73,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const generateResponse = (pitch_text, journalist_ids) => {
+    const generateResponse = async (pitch_text, journalist_ids) => {
         if (!pitch_text || journalist_ids.length === 0) {
             reject("Please provide pitch text and select at least one persona.");
             return;
         }
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
 
-                const responses = journalist_ids.map(id => {
-                    const persona = mockJournalists.find(j => j.id === id);
-                    if (persona) {
-                        return `**Response from ${persona.name} (${persona.role}):**\n"Your pitch about '${pitch_text.substring(0, 50)}...' resonates with my expertise. I can offer insights from the perspective of a ${persona.role} on how to develop this further, focusing on scalability and ethical considerations."`;
-                    }
-                    return `Error: Persona with ID ${id} not found.`;
-                });
-                resolve(responses);
-            }, 1500); // Simulate longer processing time for response generation
-        });
+        try {
+            const reqData = {
+                journalist_ids,
+                pitch_text
+            };
+
+            const reqConfig = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(reqData),
+            };
+
+            const response = await fetch('/generate_response', reqConfig);
+            if (!response.ok) {
+                if(response.status === 404) {
+                    console.log("Error occured")
+                    throw new Error("Resource doesn't exist.")
+                }
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            const responses = journalist_ids.map(id => {
+                const persona = mockJournalists.find(j => j.id === id);
+                if (persona) {
+                    return `**Response from ${persona.name} (${persona.role}):**\n"Your pitch about '${pitch_text.substring(0, 50)}...' resonates with my expertise. I can offer insights from the perspective of a ${persona.role} on how to develop this further, focusing on scalability and ethical considerations."`;
+                }
+                return `Error: Persona with ID ${id} not found.`;
+            });
+            return data;
+        } catch (error) {
+            throw new Error("An error occured : " . error)
+        }
     };
     
     const renderResponses = (responses) => {
@@ -113,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const pitchText = pitchTextarea.value.trim();
         const personaIdsArray = Array.from(selectedPersonaIds);
 
-        // Basic validation
         if (pitchText.length === 0) {
             pitchStatusMessage.textContent = 'Please enter some text for your pitch.';
             pitchStatusMessage.classList.remove('loading', 'success');
@@ -148,10 +169,9 @@ document.addEventListener('DOMContentLoaded', () => {
             pitchStatusMessage.classList.remove('loading', 'success');
             pitchStatusMessage.classList.add('error');
         } finally {
-            // Reset button and status
             sendPitchBtn.disabled = false;
             sendPitchBtn.innerHTML = 'Send Pitch <i class="fas fa-paper-plane"></i>';
-            // Clear status message after a short delay if successful
+            
             if (pitchStatusMessage.classList.contains('success')) {
                 setTimeout(() => {
                     pitchStatusMessage.textContent = '';
