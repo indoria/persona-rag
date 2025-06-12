@@ -27,7 +27,7 @@ def get_or_create_journalist(conn, name, bio="", pic="", role=""):
     row = c.fetchone()
     if row:
         return row[0]
-    c.execute("INSERT INTO journalists (name, bio) VALUES (?, ?, ?, ?)", (name, bio, pic, role))
+    c.execute("INSERT INTO journalists (name, bio, pic, role) VALUES (?, ?, ?, ?)", (name, bio, pic, role))
     conn.commit()
     return c.lastrowid
 

@@ -9,76 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const pitchStatusMessage = document.getElementById('pitch-status-message');
 
     // --- Application State ---
-    let selectedPersonaIds = new Set(); // Using Set for efficient ID management
-    let currentTheme = 'light'; // Default theme
+    let selectedPersonaIds = new Set();
+    let currentTheme = 'light';
+    let mockJournalists = [];
 
-    // --- API Simulation ---
-    const mockJournalists = [
-        { id: 1, pic: '/img/Barkha_Dutt.jpg', name: 'Barkha Dutt', role: 'Journalist' },
-        { id: 2, pic: '/img/Christopher_Hitchens.jpeg', name: 'Christopher Hitchens', role: 'Journalist' },
-    ];
-
-    /**
-     * Simulates fetching journalists from a backend API.
-     * @returns {Promise<Array>} A promise that resolves with an array of journalist objects.
-     */
-    const fetchJournalists = () => {
-        return new Promise(resolve => {
-            setTimeout(() => {
-                resolve(mockJournalists);
-            }, 700); // Simulate network latency
-        });
-    };
-
-    /**
-     * Simulates sending a pitch and receiving responses from selected journalists.
-     * @param {string} pitch_text - The user's text pitch.
-     * @param {Array<number>} journalist_ids - An array of selected journalist IDs.
-     * @returns {Promise<Array<string>>} A promise that resolves with an array of responses.
-     */
-    const generateResponse = (pitch_text, journalist_ids) => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                if (!pitch_text || journalist_ids.length === 0) {
-                    reject("Please provide pitch text and select at least one persona.");
-                    return;
-                }
-
-                const responses = journalist_ids.map(id => {
-                    const persona = mockJournalists.find(j => j.id === id);
-                    if (persona) {
-                        return `**Response from ${persona.name} (${persona.role}):**\n"Your pitch about '${pitch_text.substring(0, 50)}...' resonates with my expertise. I can offer insights from the perspective of a ${persona.role} on how to develop this further, focusing on scalability and ethical considerations."`;
-                    }
-                    return `Error: Persona with ID ${id} not found.`;
-                });
-                resolve(responses);
-            }, 1500); // Simulate longer processing time for response generation
-        });
-    };
-
-    // --- Theme Management ---
-    const applyTheme = (theme) => {
-        if (theme === 'dark') {
-            htmlElement.classList.add('dark-mode');
-            currentTheme = 'dark';
-        } else {
-            htmlElement.classList.remove('dark-mode');
-            currentTheme = 'light';
+    const fetchJournalists = async () => {
+        try {
+            const response = await fetch('/journalists'); // Make the GET request to /journalists
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error("Error fetching journalists:", error);
+            return [];
         }
-        localStorage.setItem('theme', currentTheme);
     };
 
-    const loadThemePreference = () => {
-        const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light
-        applyTheme(savedTheme);
+    const handlePersonaClick = (personaElement, personaId) => {
+        if (selectedPersonaIds.has(personaId)) {
+            selectedPersonaIds.delete(personaId);
+            personaElement.classList.remove('selected');
+            personaElement.setAttribute('aria-checked', 'false');
+        } else {
+            selectedPersonaIds.add(personaId);
+            personaElement.classList.add('selected');
+            personaElement.setAttribute('aria-checked', 'true');
+        }
+        // console.log('Selected Personas:', Array.from(selectedPersonaIds));
     };
 
-    // --- UI Rendering Functions ---
-
-    /**
-     * Renders the list of AI personas (journalists) in the UI.
-     * @param {Array} journalists - An array of journalist objects.
-     */
     const renderPersonas = (journalists) => {
         personaList.innerHTML = ''; // Clear existing content
         journalists.forEach(persona => {
@@ -112,12 +73,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    /**
-     * Renders the generated responses in the UI.
-     * @param {Array<string>} responses - An array of response strings.
-     */
+    const generateResponse = (pitch_text, journalist_ids) => {
+        if (!pitch_text || journalist_ids.length === 0) {
+            reject("Please provide pitch text and select at least one persona.");
+            return;
+        }
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+
+                const responses = journalist_ids.map(id => {
+                    const persona = mockJournalists.find(j => j.id === id);
+                    if (persona) {
+                        return `**Response from ${persona.name} (${persona.role}):**\n"Your pitch about '${pitch_text.substring(0, 50)}...' resonates with my expertise. I can offer insights from the perspective of a ${persona.role} on how to develop this further, focusing on scalability and ethical considerations."`;
+                    }
+                    return `Error: Persona with ID ${id} not found.`;
+                });
+                resolve(responses);
+            }, 1500); // Simulate longer processing time for response generation
+        });
+    };
+    
     const renderResponses = (responses) => {
-        responsesContainer.innerHTML = ''; // Clear previous responses
+        responsesContainer.innerHTML = '';
         if (responses.length === 0) {
             responsesContainer.innerHTML = '<p class="status-message no-responses">No responses generated or available.</p>';
             return;
@@ -132,30 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // --- Event Handlers ---
-
-    /**
-     * Handles clicking on an AI persona avatar to select/deselect it.
-     * @param {HTMLElement} personaElement - The DOM element of the clicked persona.
-     * @param {number} personaId - The ID of the clicked persona.
-     */
-    const handlePersonaClick = (personaElement, personaId) => {
-        if (selectedPersonaIds.has(personaId)) {
-            selectedPersonaIds.delete(personaId);
-            personaElement.classList.remove('selected');
-            personaElement.setAttribute('aria-checked', 'false');
-        } else {
-            selectedPersonaIds.add(personaId);
-            personaElement.classList.add('selected');
-            personaElement.setAttribute('aria-checked', 'true');
-        }
-        // console.log('Selected Personas:', Array.from(selectedPersonaIds));
-    };
-
-    /**
-     * Handles the "Send Pitch" button click.
-     * Initiates the API call and updates UI with responses.
-     */
     const handleSendPitch = async () => {
         const pitchText = pitchTextarea.value.trim();
         const personaIdsArray = Array.from(selectedPersonaIds);
@@ -181,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         pitchStatusMessage.classList.remove('error', 'success');
         pitchStatusMessage.classList.add('loading');
         responsesContainer.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Fetching responses...</div>';
-
 
         try {
             const responses = await generateResponse(pitchText, personaIdsArray);
@@ -209,32 +161,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    /**
-     * Toggles between dark and light themes.
-     */
+    const applyTheme = (theme) => {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            currentTheme = 'dark';
+        } else {
+            htmlElement.classList.remove('dark-mode');
+            currentTheme = 'light';
+        }
+        localStorage.setItem('theme', currentTheme);
+    };
+
+    const loadThemePreference = () => {
+        const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light
+        applyTheme(savedTheme);
+    };
+
     const handleThemeToggle = () => {
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         applyTheme(newTheme);
     };
 
-    // --- Initialization ---
     const initializeApp = async () => {
-        loadThemePreference(); // Apply saved theme on load
+        loadThemePreference();
 
-        // Initial fetch and render of personas
         personaList.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Loading personas...</div>';
         try {
             const journalists = await fetchJournalists();
+            mockJournalists = journalists;
             renderPersonas(journalists);
         } catch (error) {
             console.error('Failed to fetch journalists:', error);
             personaList.innerHTML = '<p class="status-message error">Failed to load AI personas. Please try again later.</p>';
         }
 
-        // Attach Event Listeners
         sendPitchBtn.addEventListener('click', handleSendPitch);
         themeToggleBtn.addEventListener('click', handleThemeToggle);
     };
 
-    initializeApp(); // Run the initialization function
+    initializeApp();
 });
