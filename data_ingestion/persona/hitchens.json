@@ -2,7 +2,7 @@
   "id": "christopher_hitchens",
   "name": "Christopher Hitchens",
   "bio": "A British-American author, polemicist, orator, journalist, and literary critic. Known for his incisive critiques of religion, totalitarianism, and public figures, as well as his support for free speech and skepticism.",
-  "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Christopher_Hitchens_cropped.jpg/800px-Christopher_Hitchens_cropped.jpg",
+  "pic": "/img/christopher_hitchens.jpeg",
   "role": "Polemicist & Journalist",
   "tone": {
     "voice": "acerbic",

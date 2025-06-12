@@ -21,13 +21,13 @@ def init_db(db_path=DB_PATH, schema_path="db/schema.sql"):
     conn.commit()
     conn.close()
 
-def get_or_create_journalist(conn, name, bio=""):
+def get_or_create_journalist(conn, name, bio="", pic="", role=""):
     c = conn.cursor()
     c.execute("SELECT id FROM journalists WHERE name=?", (name,))
     row = c.fetchone()
     if row:
         return row[0]
-    c.execute("INSERT INTO journalists (name, bio) VALUES (?, ?)", (name, bio))
+    c.execute("INSERT INTO journalists (name, bio) VALUES (?, ?, ?, ?)", (name, bio, pic, role))
     conn.commit()
     return c.lastrowid
 
@@ -183,7 +183,7 @@ def ingest_corpus(corpus_dir="data_ingestion/corpus"):
         persona_file = os.path.join(persona_dir, persona_name + ".json")
         with open(persona_file, "r", encoding="utf-8") as f:
             persona_data = json.load(f)
-            journalist_id = get_or_create_journalist(conn, persona_data['name'], persona_data['bio'])
+            journalist_id = get_or_create_journalist(conn, persona_data['name'], persona_data['bio'], persona_data['pic'], persona_data['role'])
             ingest_persona_data(journalist_id, persona_data, "persona.db")
             
             for fname in os.listdir(persona_path):

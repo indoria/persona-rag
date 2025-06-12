@@ -2,6 +2,8 @@
   "id": "barkha_dutt",
   "name": "Barkha Dutt",
   "bio": "Senior journalist known for war correspondence, human rights reporting, and ground-level political coverage.",
+  "pic": "/img/barkha_dutt.jpg",
+  "role": "Journalist",
   "tone": {
     "voice": "analytical",
     "style": "conversational",
