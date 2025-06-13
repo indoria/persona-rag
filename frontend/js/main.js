@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Application State ---
     let selectedPersonaIds = new Set();
     let currentTheme = 'light';
-    let mockJournalists = [];
+    let journalistPanel = [];
 
     const fetchJournalists = async () => {
         try {
@@ -102,14 +102,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            const responses = journalist_ids.map(id => {
-                const persona = mockJournalists.find(j => j.id === id);
+            let responses = [];
+            Object.keys(data).forEach((id) => {
+                const persona = journalistPanel.find(j => j.id == id);
                 if (persona) {
-                    return `**Response from ${persona.name} (${persona.role}):**\n"Your pitch about '${pitch_text.substring(0, 50)}...' resonates with my expertise. I can offer insights from the perspective of a ${persona.role} on how to develop this further, focusing on scalability and ethical considerations."`;
+                    let message = data[id];
+                    if(message.status === "success") {
+                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n"${message.response}`);
+                    } else {
+                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n"-- No message --`);
+                    }
+                } else {
+                    responses.push(`Error: Persona not found.`)
                 }
-                return `Error: Persona with ID ${id} not found.`;
             });
-            return data;
+            return responses;
         } catch (error) {
             throw new Error("An error occured : " . error)
         }
@@ -117,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const renderResponses = (responses) => {
         responsesContainer.innerHTML = '';
+        console.log(responses)
         if (responses.length === 0) {
             responsesContainer.innerHTML = '<p class="status-message no-responses">No responses generated or available.</p>';
             return;
@@ -208,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
         personaList.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Loading personas...</div>';
         try {
             const journalists = await fetchJournalists();
-            mockJournalists = journalists;
+            journalistPanel = journalists;
             renderPersonas(journalists);
         } catch (error) {
             console.error('Failed to fetch journalists:', error);
