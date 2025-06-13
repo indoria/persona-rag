@@ -484,3 +484,9 @@ html.dark-mode .theme-toggle-btn .fa-sun {
 .responses-display:not(:empty) .no-responses {
     display: none;
 }
+
+.pitch-nlp {
+    box-shadow: inset var(--box-shadow-md);
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px dashed;
+}

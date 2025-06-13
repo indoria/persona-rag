@@ -77,6 +77,7 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
     c = db_conn.cursor()
     c.execute("SELECT name FROM journalists WHERE id=?", (journalist_id,))
     row = c.fetchone()
+    print(row)
     if not row:
         return "Error: Journalist not found."
     journalist_name = row[0]
@@ -91,9 +92,12 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
             n_results=num_context,
             where={"journalist_id": journalist_id},
         )
+        print(["results", results, "Journalist_id", journalist_id, 'pitch_text', pitch_text])
         for doc in results["documents"]:
             context += doc + "\n"
-    except Exception:
+    except Exception as e:
+        print(e)
+        return "I do not know much about it."
         pass  # For POC, skip if unavailable
     # 4. Construct prompt
     prompt = ""

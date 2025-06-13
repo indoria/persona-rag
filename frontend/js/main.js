@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (persona) {
                     let message = data[id];
                     if(message.status === "success") {
-                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n"${message.response}`);
+                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n${message.response}`);
                     } else {
-                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n"-- No message --`);
+                        responses.push(`**Response from ${persona.name} (${persona.role}):**\n-- No message --`);
                     }
                 } else {
                     responses.push(`Error: Persona not found.`)
@@ -138,6 +138,88 @@ document.addEventListener('DOMContentLoaded', () => {
             responsesContainer.appendChild(responseCard);
         });
     };
+
+    function displayNlpResults(data) {
+        pitchNlpDiv = document.querySelector(".pitch-nlp-components")
+        pitchNlpDiv.innerHTML = '';
+
+        if (data.entities && data.entities.length > 0) {
+            const entitiesTitle = document.createElement('h3');
+            entitiesTitle.className = 'section-title !text-base mb-2';
+            entitiesTitle.textContent = 'Entities:';
+            pitchNlpDiv.appendChild(entitiesTitle);
+
+            const entitiesContainer = document.createElement('div');
+            entitiesContainer.className = 'flex flex-wrap gap-2 mb-4';
+            data.entities.forEach(entity => {
+                const span = document.createElement('span');
+                span.className = 'list-item entity-item';
+                span.textContent = `${entity[0]} (${entity[1]})`;
+                entitiesContainer.appendChild(span);
+            });
+            pitchNlpDiv.appendChild(entitiesContainer);
+        } else {
+            const p = document.createElement('p');
+            p.className = 'text-gray-500 text-sm';
+            p.textContent = 'No entities found.';
+            pitchNlpDiv.appendChild(p);
+        }
+
+        if (data.noun_chunks && data.noun_chunks.length > 0) {
+            const chunksTitle = document.createElement('h3');
+            chunksTitle.className = 'section-title !text-base mb-2';
+            chunksTitle.textContent = 'Noun Chunks:';
+            pitchNlpDiv.appendChild(chunksTitle);
+
+            const chunksContainer = document.createElement('div');
+            chunksContainer.className = 'flex flex-wrap gap-2';
+            data.noun_chunks.forEach(chunk => {
+                const span = document.createElement('span');
+                span.className = 'list-item chunk-item';
+                span.textContent = chunk;
+                chunksContainer.appendChild(span);
+            });
+            pitchNlpDiv.appendChild(chunksContainer);
+        } else {
+            const p = document.createElement('p');
+            p.className = 'text-gray-500 text-sm';
+            p.textContent = 'No noun chunks found.';
+            pitchNlpDiv.appendChild(p);
+        }
+    }
+
+    const getPitchAnalysis = async (pitch_text, journalist_ids) => {
+        try {
+            const reqData = {
+                journalist_ids,
+                pitch_text
+            };
+
+            const reqConfig = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(reqData),
+            };
+
+            const response = await fetch('/analyze_pitch', reqConfig);
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => response.text());
+                console.error(`HTTP error! status: ${response.status}`, errorData);
+                throw new Error(`Server responded with status ${response.status}: ${JSON.stringify(errorData)}`);
+            }
+
+            const responseBody = await response.json();
+
+            return responseBody;
+
+        } catch (error) {
+            console.error("Error during pitch analysis fetch:", error);
+            return { error: error.message || "Failed to get pitch analysis." };
+        }
+    }
 
     const handleSendPitch = async () => {
         const pitchText = pitchTextarea.value.trim();
@@ -170,6 +252,10 @@ document.addEventListener('DOMContentLoaded', () => {
             pitchStatusMessage.textContent = 'Responses generated successfully!';
             pitchStatusMessage.classList.remove('error', 'loading');
             pitchStatusMessage.classList.add('success');
+
+            const pitchAnalysis = await getPitchAnalysis(pitchText, personaIdsArray);
+            displayNlpResults(pitchAnalysis);
+            console.log(pitchAnalysis);
         } catch (error) {
             console.error('Error generating responses:', error);
             responsesContainer.innerHTML = `<p class="status-message error">Error: ${error}. Please try again.</p>`;

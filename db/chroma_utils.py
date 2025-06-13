@@ -5,9 +5,11 @@ CHROMA_PATH = "pr_journalist_chroma"
 COLLECTION = "corpus_embeddings"
 
 client = chromadb.PersistentClient(CHROMA_PATH)
-if not client.get_collection(COLLECTION, create_if_missing=True):
-    client.create_collection(COLLECTION)
-col = client.get_collection(COLLECTION)
+try:
+    col = client.get_collection(COLLECTION)
+except Exception:
+    col = client.create_collection(COLLECTION)
+
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 def store_embedding(doc_id, journalist_id, text):

@@ -84,7 +84,7 @@ def generate_response():
     data = request.json
     journalist_ids = data.get("journalist_ids")
     pitch_text = data.get("pitch_text")
-
+    
     logger.info(f"Received generate_responses for journalist_ids={journalist_ids}")
 
     if not isinstance(journalist_ids, list) or not journalist_ids:

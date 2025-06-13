@@ -13,6 +13,7 @@
 2. **Ingest corpus and fine-tune persona models**  
    ```
    python data_ingestion/ingest.py (or python -m data_ingestion.ingest)
+   python -m data_ingestion/embed_corpus
    python -m scripts.fine_tune_all
    ```
 
