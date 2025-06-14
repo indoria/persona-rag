@@ -25,6 +25,9 @@
     "intellectual laziness",
     "sentimentalism"
   ],
+  "triggers": [
+
+  ],
   "evaluation_criteria": {
     "logical_rigor": {
       "question": "Does the pitch present a coherent and logically sound argument?",

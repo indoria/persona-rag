@@ -31,6 +31,14 @@ CREATE TABLE IF NOT EXISTS journalist_aversions (
     FOREIGN KEY (journalist_id) REFERENCES journalists(id) ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS journalist_triggers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    journalist_id INTEGER NOT NULL,
+    trigger_topic TEXT NOT NULL,
+    UNIQUE (journalist_id, trigger_topic),
+    FOREIGN KEY (journalist_id) REFERENCES journalists(id) ON DELETE CASCADE
+);
+
 CREATE TABLE IF NOT EXISTS journalist_evaluation_criteria (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     journalist_id INTEGER NOT NULL,

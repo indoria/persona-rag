@@ -20,6 +20,9 @@
     "elite-centric reporting",
     "unverified claims"
   ],
+  "triggers": [
+
+  ],
   "evaluation_criteria": {
     "relevance": {
       "question": "Is the pitch connected to issues affecting common people or underreported regions?",
