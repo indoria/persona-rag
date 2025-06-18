@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTheme = 'light';
     let journalistPanel = [];
 
+    const BASE_PATH = window.location.pathname
+
     const fetchJournalists = async () => {
         try {
-            const response = await fetch('/journalists');
+            const response = await fetch(`${BASE_PATH}journalists`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(reqData),
             };
 
-            const response = await fetch('/generate_response', reqConfig);
+            const response = await fetch(`${BASE_PATH}generate_response`, reqConfig);
             if (!response.ok) {
                 if(response.status === 404) {
                     console.log("Error occured")
@@ -203,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(reqData),
             };
 
-            const response = await fetch('/analyze_pitch', reqConfig);
+            const response = await fetch(`${BASE_PATH}analyze_pitch`, reqConfig);
 
             if (!response.ok) {
                 const errorData = await response.json().catch(() => response.text());

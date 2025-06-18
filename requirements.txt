@@ -9,4 +9,9 @@ numpy
 transformers[torch]>=4.28.0
 torch>=2.0.0
 accelerate>=0.26.0
+
+# Substitute for Sqlite3 3.35 (if sqlite 3.35.0 or above is not available)
 pysqlite3-binary
+
+# Deployment library
+gunicorn
