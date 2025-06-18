@@ -1,6 +1,6 @@
 def test_generate_persona_response_smoke():
     from app.persona_engine import generate_persona_response
-    import pysqlite3 as sqlite3, chromadb
+    from patch.sqlite3 import sqlite3, chromadb
     db_conn = sqlite3.connect("persona.db")
     chroma_client = chromadb.PersistentClient("pr_journalist_chroma")
     # Use a valid journalist_id from your DB (e.g., 1 or 2 for POC)
@@ -11,7 +11,7 @@ def test_generate_persona_response_smoke():
 
 def test_generate_persona_response_invalid_journalist():
     from app.persona_engine import generate_persona_response
-    import pysqlite3 as sqlite3, chromadb
+    from patch.sqlite3 import sqlite3, chromadb
     db_conn = sqlite3.connect("persona.db")
     chroma_client = chromadb.PersistentClient("pr_journalist_chroma")
     # Try a non-existent journalist_id

@@ -1,4 +1,4 @@
-import pysqlite3 as sqlite3
+from patch.sqlite3 import sqlite3
 
 DB_PATH = "persona.db"
 

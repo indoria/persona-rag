@@ -1,7 +1,7 @@
 import os
-import pysqlite3 as sqlite3
 import logging
 import json
+from patch.sqlite3 import sqlite3
 
 logging.basicConfig(
     filename='ingest.log',

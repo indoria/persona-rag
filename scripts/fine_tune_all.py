@@ -3,7 +3,7 @@ Run this script after ingestion to fine-tune a GPT-2 model for each journalist.
 """
 import os
 from app.persona_engine import fine_tune_journalist_model
-import pysqlite3 as sqlite3
+from patch.sqlite3 import sqlite3
 
 DB_PATH = "persona.db"
 
