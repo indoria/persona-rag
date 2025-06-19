@@ -4,26 +4,16 @@
 :root {
   /* Colors - Light Mode Defaults */
   --primary-color: #007bff;
-  /* Blue */
   --primary-color-hover: #0056b3;
   --secondary-color: #6c757d;
-  /* Gray */
   --text-color: #343a40;
-  /* Dark text */
   --background-color: #f8f9fa;
-  /* Light background */
   --surface-color: #ffffff;
-  /* Card/component background */
   --border-color: #dee2e6;
-  /* Light border */
   --selection-border-color: #007bff;
-  /* Primary color for selection */
   --focus-ring-color: rgba(0, 123, 255, 0.25);
-  /* Focus ring */
   --error-color: #dc3545;
-  /* Red */
   --success-color: #28a745;
-  /* Green */
 
   /* Spacing */
   --spacing-xxs: 0.25rem;
