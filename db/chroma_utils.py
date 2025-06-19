@@ -1,7 +1,10 @@
 import chromadb
 from sentence_transformers import SentenceTransformer
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-CHROMA_PATH = "pr_journalist_chroma"
+CHROMA_PATH = os.getenv('CHROMA_PATH')
 COLLECTION = "corpus_embeddings"
 
 client = chromadb.PersistentClient(CHROMA_PATH)

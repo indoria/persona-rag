@@ -77,7 +77,6 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
     c = db_conn.cursor()
     c.execute("SELECT name FROM journalists WHERE id=?", (journalist_id,))
     row = c.fetchone()
-    print(row)
     if not row:
         return "Error: Journalist not found."
     journalist_name = row[0]

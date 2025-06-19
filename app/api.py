@@ -1,15 +1,15 @@
 import logging
 from flask import Flask, request, jsonify
-
 from patch.sqlite3 import sqlite3
-
 import chromadb
-
 from app.pitch_analysis import analyze_pitch
+import os
 from app.persona_engine import generate_persona_response
+from dotenv import load_dotenv
+load_dotenv()
 
-DB_PATH = "persona.db"
-CHROMA_PATH = "pr_journalist_chroma"
+DB_PATH = os.getenv('DB_PATH')
+CHROMA_PATH = os.getenv('CHROMA_PATH')
 
 def get_db_conn():
     conn = sqlite3.connect(DB_PATH)
@@ -22,9 +22,9 @@ app = Flask(__name__)
 
 # Setup logging
 logging.basicConfig(
-    filename='app.log',
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s'
+    filename = os.getenv('APP_LOG'),
+    level = logging.INFO,
+    format = '%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s'
 )
 logger = logging.getLogger(__name__)
 
@@ -60,6 +60,7 @@ def _generate_response(journalist_id, pitch_text):
             max_length=128,
             temperature=0.8,
         )
+        print(response);
         return {"status": "success", "response": response}
     except Exception as e:
         logger.error(f"Error generating persona response for journalist_id={journalist_id}: {str(e)}")

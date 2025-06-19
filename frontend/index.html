@@ -27,7 +27,8 @@
         </section>
 
         <section class="pitch-section">
-            <h2 class="section-title">Paste your press release text here <i class="fas fa-keyboard"></i></h2>
+            <span id="showDebugBtn">+</span>
+            <h2 class="section-title">Paste your press release text here <i class="fas fa-keyboard" id="samplePressReleaseList"></i></h2>
             <textarea id="pitch-text" class="text-area" placeholder="Provide press release text here ..."></textarea>
             <button id="send-pitch-btn" class="primary-button">
                 <i class="fas fa-paper-plane"></i>
@@ -37,8 +38,13 @@
         </section>
 
         <section class="pitch-nlp">
-            <strong>NLP</strong>
-            <div class="pitch-nlp-components"></div>
+            <div class="pitch-nlp-container">
+                <div class="m-4">
+                <p class="pitch-nlp__title"><strong>Intermediate processing (For debug purposes only)</strong></p>
+                <div class="pitch-nlp-components"></div>
+
+                </div>
+            </div>
         </section>
 
         <section class="responses-section">

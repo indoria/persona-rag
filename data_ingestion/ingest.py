@@ -3,14 +3,17 @@ import logging
 import json
 from patch.sqlite3 import sqlite3
 
+from dotenv import load_dotenv
+load_dotenv()
+
 logging.basicConfig(
-    filename='ingest.log',
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s'
+    filename = os.getenv('INGEST_LOG'),
+    level = logging.INFO,
+    format = '%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s'
 )
 logger = logging.getLogger(__name__)
 
-DB_PATH = "persona.db"
+DB_PATH = os.getenv('DB_PATH')
 
 def init_db(db_path=DB_PATH, schema_path="db/schema.sql"):
     """Create DB and tables if not exist, using schema.sql."""
@@ -184,7 +187,7 @@ def ingest_corpus(corpus_dir="data_ingestion/corpus"):
         with open(persona_file, "r", encoding="utf-8") as f:
             persona_data = json.load(f)
             journalist_id = get_or_create_journalist(conn, persona_data['name'], persona_data['bio'], persona_data['pic'], persona_data['role'])
-            ingest_persona_data(journalist_id, persona_data, "persona.db")
+            ingest_persona_data(journalist_id, persona_data, DB_PATH)
             
             for fname in os.listdir(persona_path):
                 if fname.endswith(".txt"):

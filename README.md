@@ -72,3 +72,8 @@ pyenv local <version>
 pyenv version
 pyenv versions
 ```
+
+## Sample press releases
+[Sample 1](https://prlab.co/blog/examples-of-press-release-by-type/)
+[Sample 2, and classification](https://channelvmedia.com/blog/press-release-examples-by-type/)
+[Tips](https://www.contentgrip.com/how-to-write-a-press-release-examples/)

@@ -1,8 +1,5 @@
 venv
 __pycache__/
 models/
-pr_journalist_chroma/
-persona.db
-ingest.log
-app.log
 logs
+database

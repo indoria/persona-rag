@@ -1,7 +1,10 @@
 from patch.sqlite3 import sqlite3
 from db.chroma_utils import store_embedding
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-DB_PATH = "persona.db"
+DB_PATH = os.getenv('DB_PATH')
 
 def embed_all_corpus_documents():
     conn = sqlite3.connect(DB_PATH)
