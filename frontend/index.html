@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>DialSquare : AI Persona</h1>
+        <h1>DialSquare : <small>Strategic Release Review</small></h1>
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
             <i class="fas fa-sun"></i> <i class="fas fa-moon"></i> </button>
     </header>
@@ -20,17 +20,18 @@
     <main class="container">
         <section class="personas-section">
             <h2 class="section-title">Choose AI Personas <i class="fas fa-user-circle"></i></h2>
-            <p class="section-description">Select one or more AI personas to tailor your response.</p>
+            <p class="section-description">Create a panel of journalists by selecting one or more.</p>
             <div id="persona-list" class="persona-grid">
                 <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Loading personas...</div>
             </div>
         </section>
 
         <section class="pitch-section">
-            <h2 class="section-title">Enter Your Pitch <i class="fas fa-keyboard"></i></h2>
-            <textarea id="pitch-text" class="text-area" placeholder="Write your text pitch here..."></textarea>
+            <h2 class="section-title">Paste your press release text here <i class="fas fa-keyboard"></i></h2>
+            <textarea id="pitch-text" class="text-area" placeholder="Provide press release text here ..."></textarea>
             <button id="send-pitch-btn" class="primary-button">
-                Send Pitch <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-paper-plane"></i>
+                Get reactions and insight
             </button>
             <p id="pitch-status-message" class="status-message"></p>
         </section>

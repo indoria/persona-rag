@@ -21,7 +21,7 @@
    ```
    python run.py
    ```
-   Visit [http://localhost:5000](http://localhost:5000) in your browser.
+   Visit [http://localhost:8001](http://localhost:8001) in your browser.
 
 4. **Try it!**
    - Select a journalist.

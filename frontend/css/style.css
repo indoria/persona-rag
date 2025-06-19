@@ -28,9 +28,9 @@
     --heading-font-family: 'Montserrat', sans-serif; /* Example for headings */
     --font-size-base: 1rem; /* 16px */
     --line-height-base: 1.6;
-    --h1-font-size: 2.5rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
 
     /* Box Shadows */
     --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -49,6 +49,10 @@
 
     --header-background-color: transparent;
     --footer-background-color: transparent;
+}
+
+:focus {
+    outline: none;
 }
 
 /* Dark Mode Variables */
@@ -213,7 +217,7 @@ footer {
    ========================================================================== */
 .theme-toggle-btn {
     background: none;
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: var(--border-radius-md);
     padding: var(--spacing-xs) var(--spacing-sm);
     cursor: pointer;
@@ -418,6 +422,10 @@ html.dark-mode .theme-toggle-btn .fa-sun {
 .primary-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+#send-pitch-btn .fas {
+    margin-right: var(--spacing-sm);
 }
 
 /* ==========================================================================

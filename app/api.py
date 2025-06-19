@@ -20,10 +20,6 @@ def get_chroma_client():
 
 app = Flask(__name__)
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
 # Setup logging
 logging.basicConfig(
     filename='app.log',
