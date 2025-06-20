@@ -1,44 +1,19 @@
-persona_poc/
+persona_rag/
 │
 ├── app/                           # Flask application code & API endpoints
-│   ├── __init__.py
-│   ├── api.py
-│   ├── persona_engine.py
-│   ├── pitch_analysis.py
-│   ├── utils.py
-│   └── scripts
 │
 ├── data_ingestion/                # Data ingestion, processing, and knowledge graph building
-│   ├── __init__.py
-│   ├── ingest.py
-│   ├── text_processing.py
-│   ├── feature_extraction.py
-│   ├── lda_topic_model.py
-│   └── simulated_corpus/          # Simulated journalist articles and transcripts
-│       ├── hitchens.txt
-│       ├── htichens_transcript1.txt
-│       ├── barkha_article1.txt
-│       └── barkha_transcript1.txt
+│   ├── persona/                   # Persona definition in JSON
+│   └── corpus/                    # Simulated journalist articles and transcripts
 │
 ├── db/                            # SQLite and ChromaDB integration
-│   ├── __init__.py
-│   ├── schema.sql
-│   ├── sqlite_utils.py
-│   └── chroma_utils.py
+├── database/                      # Temporary database (using sqlite3 and local model) 
+│   ├── pr_jorunalist_chroma/      # Vector embeddings of persona corpus
+│   ├── persona.db                 # Persona and corpus database
+│   └── models/                    # Fine-tuned persona models and tokenizer files (populated after Phase 2)
 │
-├── models/                        # Fine-tuned persona models and tokenizer files
-│   └── (populated after Phase 2)
-│
-├── frontend/                      # Minimal UI and assets
-│   ├── index.html
-│   ├── style.css
-│   └── main.js
-│
+├── frontend/                      # UI and assets
 ├── tests/                         # Unit and integration tests
-│   ├── test_data_ingestion.py
-│   ├── test_pitch_analysis.py
-│   └── test_persona_engine.py
-│
 ├── requirements.txt
 ├── README.md
 └── run.py                         # Entry point for the Flask app

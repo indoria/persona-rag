@@ -6,7 +6,7 @@ import os
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, Trainer, TrainingArguments, TextDataset, DataCollatorForLanguageModeling
 import torch
 
-MODEL_ROOT = "models"
+MODEL_ROOT = "database/models"
 
 def fine_tune_journalist_model(journalist_name, corpus_texts, model_name="distilgpt2", output_dir=None, epochs=1):
     """
