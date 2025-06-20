@@ -1,0 +1,1977 @@
+RSS Feed: https://www.platformer.news/rss/
+Feed Title: Platformer
+Feed Description: News at the intersection of Silicon Valley and democracy. On Monday, Tuesday, and Thursday at 5PM Pacific.
+Extracted on: 2025-06-19 10:28:54
+Total entries available: 15
+Extracting: 15 stories
+====================================================================================================
+
+
+====================================================================================================
+ARTICLE 1: The dream of the Fediverse is alive on Threads
+====================================================================================================
+Published: Wed, 18 Jun 2025 01:16:24 GMT
+Link: https://www.platformer.news/threads-fediverse-feed-bluesky-mastodon/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Threads
+The dream of the Fediverse is alive on Threads
+Decentralized media is off to an agonizingly slow start — but there are glimmers of progress
+Casey Newton
+Jun 17, 2025
+—
+11 min read
+The Fediverse feed in Threads. (Meta)
+A couple of weeks from now, it will have been two years since
+Meta introduced Threads
+. From the start, everything about the app seemed unlikely, starting with the fact that Meta was introducing a bare-bones Twitter clone in the year 2023.
+But nothing about the app was more unusual than the fact that Meta said it would make Threads part of the Fediverse: that collection of social products connected with open protocols. After decades of building extremely lucrative walled gardens like Facebook and Instagram, Meta said it would make Threads interoperable with other products built on the ActivityPub protocol.
+To the surprise of some, the company actually followed through. It built features to let Threads users
+share their posts to the Fediverse
+, meaning that someone who preferred Mastodon could follow a user on Threads and see that user's posts in their Mastodon feed. They also enabled
+Fediverse replies to Threads posts
+for those who opt in, and let
+Threads users follow Fediverse accounts
+.
+Despite Threads' efforts, the Fediverse remains far from a mainstream phenomenon. Threads, which has
+350 million monthly users
+, is the largest app in the network by far. Mastodon, which created the underlying protocol and was previously the biggest app in the network,
+has fewer than 800,000 monthly users
+. The
+rest of the Fediverse
+, which includes YouTube clone PeerTube and photo-sharing service Pixelfed, adds only around 300,000 total unique users.
+Meanwhile Bluesky, a decentralized app built on the rival AT Protocol, registered an impressive
+36 million users
+— but
+fewer than 4 million
+of those were active in the past week.
+Slate
+'s Luke Winkie wrote last week that the app has been in a "
+frustrating downward spiral
+" owing to its monolithic leftist politics and culture of aggressive scolding in the replies.
+Meanwhile, X has retained hundreds of millions of users that it accumulated while it was still Twitter. Key audiences — particularly people interested in artificial intelligence and sports fans — have refused to move, no matter what indignities Elon Musk subjects them to.
+They are undoubtedly there in large part because they believe that if they post it on X, people will see it. If they posted it elsewhere, people may not.
+That classic chicken-and-egg problem of social media is just one of the reasons the Fediverse has grown slowly over the past couple years. But it is possible to solve it — and on Tuesday, Threads offered one potential answer: a dedicated feed of Fediverse posts.
+Here's
+David Pierce at
+The Verge
+:
+Starting today, if you’ve
+turned on fediverse sharing
+in Threads, there will be a new section at the top of your Following feed that takes you to a list of posts from folks you follow on Mastodon,
+Flipboard
+, or wherever else you’ve connected your Threads account. It’s very much a separate feed, which Meta software engineer Peter Cottle tells me is deliberate. “For everything from integrity to user impersonation, just for user understanding, it’s nice to have it as kind of a separate thing.” The Fediverse feed isn’t algorithmically ranked, or subject to any of Threads’ rules or moderation; it’s just a reverse-chronological feed of stuff you follow.
+Over time, Cottle says, Meta could mix the posts more, but he’s not sure that’s the right idea. “There’s actually kind of a different use case for fediverse consumption,” he says, that’s more like old-school RSS readers. “I might want to subscribe to Ghost publications, or subscribe to different authors, so I have this dedicated place to catch up on my across-the-web content, separately from a Following feed or a For You feed.” Even internally at Meta, he says, there’s some debate about whether Threads wants to be a fully open social network or should just act as a repository for all that external content.
+In a
+separate Q&A
+, Cottle noted that Threads now interacts with 75 percent of servers on the Fediverse — "sending posts, likes, and replies back and forth over the Internet in a decentralized way."
+I can understand anyone who greets this news with a hearty "who cares?" For the moment, there simply isn't all that much to browse on the Fediverse. Few people get excited about having one more feed to browse.
+At the same time, the Fediverse has lacked a lot of the basic infrastructure necessary for apps like Threads to surface interesting posts and accounts. The addition of a Fediverse feed is a meaningful step to address that: giving people a place they can follow and interact with individual publications (including, soon,
+Platformer
+) in the same way they do with Threads accounts. That's the sort of thing the Fediverse was always meant to make possible, and it's just now coming into view.
+The death of Twitter offered a powerful reason why we might not want to have powerful networks in the hands of a single person or company. The promise of the Fediverse is not unlike the promise of the web itself — that a rich network of individuals, interacting over open protocols, can build something together that is greater than any one app or site.
+Visibility on Threads offers people one reason they may want to build in the Fediverse, as opposed to somewhere else. If enough of them do, it could begin to accelerate demand for other apps and services.
+All of this remains a longshot. But I don't know anyone who is satisfied with the status quo. Threads keeps building tiny bridges to the open web; now we'll see who out there may be willing to cross them.
+Sponsored
+We’ve been trying to reach you...
+…about your car’s extended warranty. Tired of getting those calls? Here’s your chance to protect yourself, your personal data, and your sanity.
+Incogni is a personal data removal service
+that scrubs your sensitive info (think: SSN, DOB, home addresses, health information, and contact details) from the web. With Incogni, you’ll worry way less about: identity theft health insurers raising your rates based on info from data brokers robo and spam calls scammers taking out loans in your name.
+Protect your personal info + get 55% off your annual plan with code PLATFORMER
+My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+OpenAI and Microsoft are fighting
+Everyone is talking about a pair of stories that highlight OpenAI’s frustrations with Microsoft as it seeks to come to an agreement that will allow it to
+simplify its byzantine corporate structure
+.
+For six years, the agreement between the companies has been straightforward. Microsoft gives OpenAI funding and infrastructure to train and serve AI models; in exchange, Microsoft gets access to all of OpenAI’s intellectual property, and can use it to develop its own AI products.
+Tensions between the companies first emerged when OpenAI CEO Sam Altman was briefly fired in 2023, threatening to send the company’s value — and Microsoft’s then-$13 billion investment — to zero. Since then, Microsoft has complained that OpenAI is slow to share its cutting-edge technology with it. And OpenAI has complained that Microsoft is too stingy with computing resources.
+In the
+Wall Street Journal
+yesterday, Berber Jin
+reported on a new flashpoint
+: OpenAI’s intended acquisition of coding startup Windsurf. OpenAI doesn’t want Microsoft to get access to Windsurf’s intellectual property, which could help it build its GitHub Copilot assistant and blunt any advantage that that same IP could give to ChatGPT. It’s so frustrated with Microsoft that it has considered accusing the company publicly of anticompetitive behavior, Jin reported.
+The Information
+today corroborated that report, noting that
+negotiations over the for-profit conversion have gone on for eight months and do not appear to be close to resolution
+. Sri Muppidi and Aaron Holmes report that Microsoft is seeking a 33 percent stake in the for-profit entity in exchange for giving up rights to OpenAI’s future profits. OpenAI wants the right to sell its models on cloud platforms other than Microsoft’s Azure — and to exempt the Windsurf acquisition from the IP sharing requirements of the original contract.
+So far, all of this thrashing hasn’t amounted to much: Microsoft and OpenAI continue to ship new products at a rapid clip. But if you believe that the AI race is entering some sort of endgame in the next few years, as many OpenAI employees do, it’s worth asking at what point the overhang of all this conflict risks making both companies less competitive than they otherwise might be.
+Elsewhere
+: OpenAI CEO Sam Altman said that
+Meta has been making "giant offers" — in the $100 million range — to poach its talent
+. But so far, he said, "none of our best people" have said yes. (Maxwell Zeff /
+TechCrunch
+)
+The influencer presidency
+Yesterday I wrote about
+the darkly comic spectacle of the Trump Organization’s T1 phone
+. Today
+The Verge
+’s Alison Johnson investigates
+which Chinese-designed smartphone it will likely be based on
+. Will it be the DOOGEE Note 58? The Ulefone Note 18 Ultra? Or perhaps the Revvl 7? I can’t wait to find out.
+xAI is burning cash
+When last we left Elon Musk’s xAI, its also-ran chatbot Grok
+had become briefly obsessed with white genocide
+. I wrote about it then as an example of tech companies using AI to advance political causes. It was also an example of how developers attempting to change one particular characteristic of their large language model can also just make the whole thing worse. (Here’s
+a fun paper on that phenomenon
+.)
+Making the world’s eighth-best chatbot isn’t just technically difficult — it’s hugely expensive, too. Bloomberg reports that the company has recently been trying to
+borrow $5 billion in debt while also raising another $4.3 billion in new equity
+. That’s on top of the $14 billion it has already raised; of that, the company has already spent $10 billion, according to Carmen Arroyo and Jill R Shah.
+The company is spending the money as fast as it’s raising it, burning about $1 billion a month, the same journalists report in
+a separate story today
+. Of course, none of the big labs are yet earning profits. But OpenAI, for example, expects to generate $12.7 billion in revenue this year; xAI projects just $500 million.
+Musk, who is worth more than $400
+billion
+, can afford to bankroll xAI’s misadventures for some time. But Meta has
+learned the hard way
+that throwing money at LLMs is no guarantee of building a competitive model. And xAI’s leader seems
+far more invested in removing “wokeness” from Grok
+than he does making it useful.
+Governing
+President Trump granted another 90-day extension for TikTok to be divested
+. It's unclear that any progress at all has been made since the last extension. And here's your periodic reminder that this executive order is illegal; it's just that no one in Congress cares enough to do anything about it. (Clare Duffy and Samantha Waldenberg / CNN)
+The Senate passed the GENIUS Act, which would create a framework for stablecoins, giving the crypto industry its first major legislative victory
+. "Democrats failed to secure a provision barring the president from profiting, even as Trump disclosed earning $57 million from token sales in 2024 alone." (MacKenzie Sigalos / CNBC)
+The Senate confirmed Olivia Trusty to the Federal Communications Commission, giving Republicans a 2-1 majority
+. Two Democratic recently left and presumably will not be replaced anytime soon. (Ted Johnson /
+Deadline
+)
+Social media overtook television as Americans’ top news source for the first time this year, a new report found.
+How do we all feel like that's going? (
+Nieman Lab
+)
+OpenAI won a $200 million contract to provide the Defense Department with AI tools for “national security missions.”
+(Jordan Novet / CNBC)
+A Senate draft tax bill would increase a Biden era tax credit for semiconductor manufacturers to 30 percent, up from 25 percent.
+(Alicia Diaz / Bloomberg)
+X Corp sued New York and challenged the constitutionality of a state law that requires social media companies to disclose how they monitor things like hate speech, extremism and disinformation, claiming it violates the First Amendment.
+And it's probably right! (Jonathan Stempel / Reuters)
+The percentage of employees in the US who say they’ve used AI at their job has nearly doubled to 40 percent in the past two years, a new poll suggests.
+(Ryan Pendell /
+Gallup
+)
+Women are more likely than men to have their jobs be at risk of being automated, but are 25 percent less likely than men to have basic digital skills, studies show.
+(Isabel Berwick /
+Financial Times
+)
+California’s new AI safety report says companies are “simply inadequate” at understanding risks and harms, and calls for third-party evaluations and whistleblower protections.
+(Hayden Field /
+The Verge
+)
+Mastodon updated its terms to explicitly bar AI model training.
+(Ivan Mehta /
+TechCrunch
+)
+Meta’s Oversight Board is reviewing a case involving the removal of a political poem on Instagram that critiqued the Argentinian government’s treatment of marginalized groups.
+(
+Oversight Board
+)
+Tumblr users have complained in recent days that their content is being falsely flagged as “mature,” raising concerns about automated content moderation.
+(Sarah Perez /
+TechCrunch
+)
+Industry
+Meta plans to release versions of their AI smart glasses under the Oakley and Prada brands with an aim towards athletes, extending their partnership with EssilorLuxottica.
+(Salvador Rodriguez and Jonathan Vanian / CNBC)
+Meta is launching a new suite of AI features for advertisers and agencies, including testing new video generation capabilities and video highlights.
+(Mark Mwachiro /
+Adweek
+)
+Chinese AI startup MiniMax says its new MiniMax-M1 LLM scored higher than DeepSeek’s latest R1-0528 model in several benchmarks.
+(Bloomberg)
+Google made its Gemini 2.5 Pro and Flash models generally available and is bringing 2.5 Flash-lite, what it says is the most cost-efficient and fastest 2.5 model, in preview.
+(Tulsee Doshi /
+Google
+)
+Substack is generating $45 million in recurring revenue, and now hopes it can finally raise an up round after struggling for years to match its pandemic era $700 million valuation
+. But its mobile app, despite recent growth, has a paltry 5.5 million users. (Eric Newcomer /
+Newcomer
+)
+Waymo is expanding its service areas in San Francisco and Los Angeles, along with adding Bay Area cities Palo Alto and Menlo Park.
+Still no rides to SFO, though. (Andrew J. Hawkins /
+The Verge
+)
+Microsoft and AMD extended their ongoing partnership and signaled that new first-party Xbox consoles are coming.
+The rise of third-party handheld gaming consoles had thrown that into some doubt. (Jez Corden /
+Windows Central
+)
+Amazon CEO Andy Jassy said the company expects to cut corporate jobs because of “efficiency gains” from AI.
+No details, though; this feels like something he could have said at any time over the past few years. (Steve Kopack / NBC News)
+Amazon’s Prime Day sale will be four days long this year, instead of its usual two-day event.
+(Cameron Faulkner /
+The Verge
+)
+Salesforce said it’s increasing its list prices for many products by an average of 6 percent, including the cost of Slack.
+(Brody Ford / Bloomberg)
+Tinder is bringing back its Double Date feature — which lets users invite friends to match with other pairs of friends — after shelving it in 2017 over privacy concerns.
+(Natalie Lung / Bloomberg)
+Adobe released the Firefly mobile app, which includes all its generative AI models, for iPhone and Android devices.
+(Jess Weatherbed /
+The Verge
+)
+Grow a Garden, a farming simulation on Roblox popular with Generation Alpha, broke its own record for concurrent users over the weekend with 16.4 million active players on Saturday.
+(Kieran Press-Reynolds /
+New York Times
+)
+Americans watched more video on streaming services than through cable and broadcast networks in May, marking the first time this happened over a full month, a Nielsen report said.
+(John Koblin /
+New York Times
+)
+Streaming platform Max, soon to be HBO Max, will soon use an AI tool that will identify “standout” scenes from shows and movies that will be featured in video previews.
+Automated spoilers for shows you haven't watched yet? Not sure about that one. (Emma Roth /
+The Verge
+)
+Those good posts
+For more good posts every day,
+follow Casey’s Instagram stories
+.
+(
+Link
+)
+(
+Link
+)
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and fediverse handles:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 2: The president is selling a phone
+====================================================================================================
+Published: Tue, 17 Jun 2025 00:24:00 GMT
+Link: https://www.platformer.news/trump-mobile-phone-t1-conflicts/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Trump
+The president is selling a phone
+The Trump Mobile T1 probably won't be a big hit. It's still dangerous
+Casey Newton
+Jun 16, 2025
+—
+10 min read
+The Trump Mobile T1 (trumpmobile.com)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 3: OpenAI's toy story
+====================================================================================================
+Published: Fri, 13 Jun 2025 00:13:46 GMT
+Link: https://www.platformer.news/openai-mattel-partnership-child-safety/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+OpenAI
+OpenAI's toy story
+In a new partnership with Mattel, the company hopes to reimagine play — but making internet-connected toys safe will be anything but child's play
+Casey Newton
+Jun 12, 2025
+—
+11 min read
+Levart Photographer (Unsplash)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 4: Meta looks for an AI reset
+====================================================================================================
+Published: Wed, 11 Jun 2025 01:30:40 GMT
+Link: https://www.platformer.news/meta-scale-investment-zuckerberg-wang/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Meta
+Meta looks for an AI reset
+Mark Zuckerberg knows the company needs a new AI strategy. Is Scale's Alexandr Wang the partner he needs?
+Casey Newton
+Jun 10, 2025
+—
+11 min read
+(Dima Solomin / Unsplash)
+This is a column about AI. My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+Over the weekend, Bloomberg reported that Meta is considering
+a large investment in data infrastructure provider Scale AI
+. Today, fresh reports in
+Bloomberg
+and the
+New York Times
+revealed what Meta is getting for its roughly $14 billion. In addition to acquiring 49 percent of Scale, 28-year-old Scale founder Alexandr Wang will join Meta as an executive, leading a new team of extremely expensive researchers in an effort to build superhuman AI.
+The deal could be announced as soon as Wednesday.
+Meta and Scale declined to comment. But I spent the past day talking to people close to the deal, and can independently confirm many of the details in those Bloomberg and
+Times
+reports. Today, let's talk about what Meta is up to, and explore whether this is the AI reset that the company has been looking for since
+the disappointment of Llama 4
+.
+I.
+First, the details. Founded in 2016, Scale's primary business is in labeling data for use in the training of AI systems. For example, it might hire subcontractors to identify and categorize content that violates Meta's community standards to help train machine-learning classifiers. Scale, like Meta,
+has been sued by former content moderators over its labor practices
+.
+Meta is one of its largest customers, but it also provides services to Meta's rivals, including Google DeepMind and OpenAI. One person I spoke with said Scale expects those companies will stop using Scale's services, for fear of Meta using information about their usage to gain a competitive advantage. As part of the deal, Meta has agreed to dramatically increase its spending with Scale.
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 5: Apple is shipping through it
+====================================================================================================
+Published: Tue, 10 Jun 2025 01:15:07 GMT
+Link: https://www.platformer.news/apple-wwdc-2025-ai/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Apple
+Apple is shipping through it
+At WWDC, the company insists that its AI transformation is well underway — but the evidence feels a little thin
+Casey Newton
+Jun 9, 2025
+—
+12 min read
+Apple CEO Tim Cook presents on Monday at WWDC (YouTube)
+Here's this week's free edition of
+Platformer
+: a look at Apple's high-stakes Worldwide Developers Conference. After a bruising year, the company is seeking to reassure investors that better days are ahead — but the story feels a little thin.
+Leaving Substack and Twitter means we have fewer places we can promote our work. Want to kick in a few bucks to support us? If so, consider
+upgrading your subscription today
+. We'll email you all our scoops first, like our recent one about
+Meta's new hate-speech guidelines
+.
+Plus
+you'll be able to discuss each today's edition with us in our chatty Discord server, and we’ll send you a link to read subscriber-only columns in the RSS reader of your choice.
+Upgrade
+This column touches on AI. My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+It has now been a year since
+Apple executives stood on stage
+and heralded a revolution to their platform that would be powered by artificial intelligence. Or, as the company sought to brand it,
+Apple
+Intelligence — a version of AI that was both highly personalized to you and your devices,
+and
+more protective of your privacy than its rivals. Apple Intelligence would take advantage of the company's deep knowledge about its users, scouring their emails, texts, and contacts to route requests around the operating system and take actions on your behalf.
+It was an appealing vision. But it
+never shipped
+. In March, amid mounting questions over when a bunch of features due to ship in 2024 might actually arrive, Apple finally squeaked out
+an update
+: they would now arrive "in the coming year," much later than planned, and long after Apple had aired television ads promoting them.
+It was more bad news for Apple in a year that has seen plenty of it, from
+a failed tug-of-war with President Trump
+over tariffs to
+being excoriated by a federal judge
+over its malicious compliance in an antitrust case, who referred the company to prosecutors for a criminal contempt investigation.
+All of which set the stage today for an unusually high-stakes Worldwide Developers Conference. Apple remains one of the world's biggest companies, of course, and its products largely continue to be beloved. But for the first time in a long time, there is a sense that Apple has begun to lose the plot —
+too slow
+to recognize the potential of AI, and not capable enough to realize it.
+In some ways, Monday's keynote presentation seemed to confirm some of those suspicions. Many of the announcements were almost comically modest: a new naming scheme for the company's operating systems! A Phone app for the desktop! Windows on the iPad that you can resize!
+There was also, front and center, a streak of defiance. After CEO Tim Cook welcomed people to WWDC by promoting an upcoming Apple movie about race cars, software engineering chief Craig Federighi began his remarks with the AI features that Apple
+did
+ship last year: writing tools, a ChatGPT integration, and 15 other things that I mostly had to look up to remember what they did. (Do
+you
+know what the
+Image Wand
+is?)
+There were also promises of new AI features to come. One update will let you
+ask ChatGPT about anything you're seeing on your screen
+. Another will
+give third-party developers access
+to on-device large language models. And its Xcode development tool will get code completion assistance from OpenAI, though developers can also bring in their own models using API keys.
+That's all fine, though given what we're seeing elsewhere —
+LLMs working unsupervised for seven hours to refactor code bases
+, for example — it hardly seems like the state of the art. More disappointingly, I think, the many Apple announcements on Monday failed to cohere around any particular vision for its technology aside from "use it more."
+At other times, Apple has sought to inspire with visions of how technology can uniquely advance human progress. But the Apple of "Think Different" and computers as bicycles for the mind was hard to see on Monday. Instead, we saw a long procession of knowledge workers engaged in the tedious meta-work of modern life: rearranging windows on an iPad; polling the group chat about times to meet; setting up a virtual clock.
+Contrast that with Google, which used
+its developer conference this year
+to show an agent that browses the web on your behalf, an AI filmmaking tool already being used in production, and Gmail writing in your voice. Some of those features are currently vaporware. But there's a clear vision there.
+Of course, Apple has its own little productivity boosts to offer. My favorite thing Apple showed off on Monday was an update to Spotlight — the built-in launcher on macOS. While it was initially a novel way to search for files on your Mac, Spotlight has long been replaced on my computers with more full-featured launchers like Alfred and
+Raycast
+.
+The next version of Spotlight will take a step in Raycast's direction — evolving from a simple launcher to a kind of command center for your computer. In addition to file search, you'll be able to take actions, such as sending messages. You'll also be able to run shortcuts. There's nothing there that would cause me to uninstall Raycast, but this is the kind of stuff I like to see Apple do: make serious but easy-to-use features for people who want to get stuff done a little more efficiently.
+On the other end of the spectrum, for me anyway, was "Liquid Glass" — a redesign of Apple's operating systems designed to make everything translucent and
+borderline unreadable
+. I haven't seen the design up close and know that reflexive dislike of redesigns is so common as to be cliché. And yet I'm struck by, despite all the minutes spent on stage discussing Liquid Glass, how little of that time was spent explaining what it was meant to
+do
+.
+We heard endlessly about how pretty it is, how it reflects the light, and how it shifts effortlessly into dark mode. But we heard almost nothing about what the design is meant to do.
+At the risk of lapsing into another cliché — quoting Steve Jobs — that seems like an oversight. In 2003, Jobs had this to say to the
+New York Times
+,
+about the design of the iPod
+: ''Most people make the mistake of thinking design is what it looks like. 'People think it's this veneer – that the designers are handed this box and told, 'Make it look good!' That's not what we think design is. It's not just what it looks like and feels like. Design is how it works.''
+Liquid glass looks like the product of a design process led by someone saying "Make it look good." I'm sure it "works" fine. But I'm not sure what it is meant to do that its predecessor did not.
+How much does any of this matter? Even on this uncertain footing, Apple remains a monolith. Most people rarely switch device ecosystems, and even Google has yet to figure out an AI feature powerful enough to spur large groups of iPhone owners to trade them in for Pixels.
+Apple still has plenty of new widgets it can show off. But the vision behind all that activity feels a little muddy — and the company's rivals, including Google and OpenAI, seem to have a much stronger idea of what they are doing. Apple can still do great things — but for now, it seems fixated on the low-hanging fruit.
+Sponsored
+NewsGuard Audit:
+AI Models Fail on News Topics 20% of the Time
+Get the audit to see why the AI models aren’t trusted on news topics. Our public audits do not provide the individual scores of the chatbots.
+But, if you work at an AI company, we’ll disclose your fail rate to you.
+Download the Report
+Mac OS 26 is called “Tahoe” and will come with a Phone app for the first time
+. (Antonio G. Di Benedetto /
+The Verge
+)
+iPad OS 26 brings a flurry of windows and the ability to resize them
+. (David Pierce /
+The Verge
+)
+Vision OS 26 comes with “spatial widgets” like clocks and photo frames that will remember where you placed them in a room
+. The creepy “personas” also got a redesign. (Ryan Christoffel /
+9to5Mac
+)
+Xcode 26 has AI assistance features powered by ChatGPT, and developers can add other models via API keys
+. (Ivan Mehta /
+TechCrunch
+)
+An update to AirPods effectively lets you use them as a lavalier mic
+. Apple says it’s “studio” quality; we’ll see. (Ben Lovejoy /
+9to5Mac
+)
+iMessage is getting polls for group chats suggested by AI
+. Seems hugely annoying, but hopefully in an entertaining way. See also: swappable backgrounds for your chats. (Aisha Malik /
+TechCrunch
+)
+Workout Buddy is a new robot voice for your workouts that announces key milestones as you run and lift
+. (Tim Hardwick /
+MacRumors
+)
+Live translation features are coming to FaceTime, Messages, and Phone
+. But we don’t know for how many languages. (Rebecca Bellan /
+TechCrunch
+)
+ChatGPT integration has come to Image Playground
+. This has to be the most complicated and least useful way to generate images with ChatGPT. (Hartley Charlton /
+MacRumors
+)
+There’s a new standalone Games app with new social features
+. One of those things it feels like Apple announces every year. (Benjamin Mayo /
+9to5Mac
+)
+The Musk-Trump blow-up
+Elon Musk relaxed his campaign against President Trump over the weekend, turning the attention of his X feed to an interest he still shares with the administration: whipping up anti-immigrant sentiment. On Sunday he reposted one of Trump's Truth Social posts, seeming to signal some sort of intention to make up.
+Trump, for his part, has played down the significance of Musk’s departure. But on Saturday he
+told NBC News
+that “there would be ‘serious consequences’ if tech mogul Elon Musk funds Democratic candidates to run against Republicans who vote in favor of the GOP’s sweeping budget bill.” And the administration is concerned about
+the security implications
+of installing Musk’s Starlink at the White House.
+Elsewhere:
+President Trump reportedly called Musk “the man who has lost his mind.”
+(Gareth Vipers /
+Wall Street Journal
+)
+The feud was great for X – the app jumped from an average rank of No. 68 on the US App Store’s charts to No. 23 on June 5.
+(Sarah Perez /
+TechCrunch
+)
+Bankers are reportedly worried that the feud will affect xAI’s $5 billion debt deal.
+(Alexander Saeedy and Peter Rudgeair /
+Wall Street Journal
+)
+A look at how conspiracy theorists in the QAnon world convinced themselves that the Musk-Trump breakup is all just a show.
+(David Gilbert /
+Wired
+)
+Allies of both Trump and Musk are urging them to repair their relationship to limit the political and commercial fallout.
+(Joe Miller, Alex Rogers, George Hammond and Hannah Murphy /
+Financial Times
+)
+The retreat from content moderation
+The
+Times
+reports that YouTube
+quietly relaxed its community guidelines in December
+so that now up to half of a video can violate the platform’s guidelines and remain on the platform under an exemption for discussions of subjects in the public interest. Regardless of what you make of the changes here, it’s incredibly cowardly of YouTube not to have made any of this public. If you want people to follow your rules, first you have to tell them what they are.
+Governing
+An investigation into how a DOGE staffer with no medical experience used outdated and inexpensive AI models that made mistakes to identify which Veterans Affairs contracts to terminate.
+(Brandon Roberts, Vernal Coleman and Eric Umansky /
+ProPublica
+)
+A profile of Dominick McGee, a right-wing influencer who posts conspiracy theories to his X account and one of the members of new media invited to press briefings at the White House.
+Despite fervent pro-Trump posting, he still struggles to pay his bills. (Stuart A. Thompson /
+New York Times
+)
+Trump is reportedly expected to sign an executive order extending the TikTok deadline again, as a mid-June deadline approaches.
+When you have decided to ignore the law you can just extend things as long as you want. (Alex Leary /
+Wall Street Journal
+)
+Tucker Carlson was reportedly on the White House’s list of potential TikTok investors earlier this year.
+(Alex Rogers, Clara Murray, James Fontanella-Khan and Hannah Murphy /
+Financial Times
+)
+The Trump administration is reportedly seeking a potential consent decree in an FTC deal that could force Meta to pay restitution to conservative users and businesses they claim were harmed by content moderation.
+This is complete nonsense, but expect Meta to pay it anyway. (Lydia Moynihan /
+New York Post
+)
+A Trump crypto wallet and trading app has been shelved, but World Liberty Financial will buy a “substantial position” in the Trump memecoin, Eric Trump said.
+(Jason Shubnell /
+The Block
+)
+Trump signed an executive order reversing many of Biden’s cybersecurity initiatives, including ones that would have prioritized AI testing for cyber defense, required software vendors to comply with new federal standards, and accelerated the rollout of quantum-proof encryption.
+(Eric Geller /
+Cybersecurity Dive
+)
+Trump reportedly authorized Treasury Secretary Scott Bessent’s team to negotiate away recent restrictions on the sale of technology and other products to China.
+(Lingling Wei /
+Wall Street Journal
+)
+A slew of new apps aimed at providing immigrants support and legal information is emerging amid Trump’s attacks.
+(Gabriela Martínez Córdova and Alicia Fàbregas /
+Rest of World
+)
+Meta hosted hundreds of ads promoting “nudify” apps on its platforms, this investigation found.
+The company has since removed a number of them, it said. (Emmet Lyons and Leigh Kiniry / CBS News)
+Criminals are increasingly using “residential proxy” services to hide and mask IP addresses among everyday online activity, researchers warn.
+(Lily Hay Newman /
+Wired
+)
+Two suspects in last month’s bombing of a fertility clinic in Palm Springs, Calif. used an unspecified generative AI program to help plan the attack, the FBI said.
+(Annie Palmer / CNBC)
+A High Court in the UK warned lawyers that could face criminal prosecution for presenting false material generated by AI.
+And maybe they should? (Lizzie Dearden /
+New York Times
+)
+AI regulation proposals in the UK are being delayed by at least a year as ministers look to introduce a more comprehensive AI bill to address safety and copyright.
+(Eleni Courea and Kiran Stacey /
+The Guardian
+)
+Getty Images said its landmark copyright lawsuit in the UK against Stability AI does not pose a threat to the generative AI industry as Stability AI suggested.
+(Sam Tobin / Reuters)
+China’s most popular AI chatbots like Alibaba’s Qwen and apps like Tencent’s Yuanbao and Moonshot’s Kimi temporarily suspended its functions and photo recognition services to prevent students from cheating during the country’s annual college entrance exams.
+(Luz Ding / Bloomberg)
+Starlink has reportedly secured its license to roll out its satellite internet services in India.
+(Santosh Kumar and Shwetha Sunil / Bloomberg)
+Industry
+OpenAI has hit $10 billion in annual recurring revenue, it said, which excludes licensing revenue from Microsoft and large one-time deals.
+(Ashley Capoot and Kate Rooney / CNBC)
+A look inside OpenAI’s plan to embed AI tools in every university for faculty and students alike.
+(Natasha Singer /
+New York Times
+)
+A look inside a secret math meeting, where leading mathematicians were surprised by how the o4-mini AI chatbot could solve the complex problems they devised.
+A fascinating case of some AI skeptics coming around. (Lyndie Chiou /
+Scientific American
+)
+ByteDance has reportedly replaced US staff with managers connected to China as its TikTok Shop sales missed its previous goal of $17.5 billion in transaction volume last year.
+More than 100 TikTok Shop employees in the US were fired. (Bloomberg)
+X is partnering with Polymarket, naming it the platform’s official prediction market partner.
+(Aisha Malik /
+TechCrunch
+)
+Usage of X’s Community Notes has plummeted this year, this analysis found.
+One reason that you don't want to base your content moderation system on volunteer efforts is that the worse your platform gets, the more that people will stop volunteering. (Joe Murphy / NBC News)
+Meta is reportedly in talks to make an investment in AI startup Scale AI that could exceed $10 billion in value.
+(David Carnevali, Shirin Ghaffary, Katie Roof and Kurt Wagner / Bloomberg)
+Google is rolling out “scheduled actions” for Gemini AI Pro and AI Ultra subscribers, which will let users ask the AI assistant to perform tasks at specific times.
+(Emma Roth /
+The Verge
+)
+YouTube is rolling out a new feature that will let creators upload different thumbnails for videos dubbed into a different language.
+(Dan Whateley /
+Business Insider
+)
+Microsoft will soon add a “safety” category to its leaderboard of AI models and rank them to build trust with cloud customers.
+(Rafe Uddin and Cristina Criddle /
+Financial Times
+)
+Amazon plans to invest at least $20 billion in Pennsylvania to expand data center infrastructure.
+(Reuters)
+Snapchat now has an app for the Apple Watch, which will let users preview incoming messages and reply to them, but will not let users send photos.
+(Andrew Liszewski /
+The Verge
+)
+Duolingo CEO Luis von Ahn said he didn’t expect the amount of blowback he got for going “AI-first,” and says it was mischaracterized – AI is not going to replace the company’s workforce it said, just the jobs of a “very small number of hourly contractors.”
+(Emma Jacobs /
+Financial Times
+)
+This year’s virtual FediForum conference introduces new apps, including Bonfire Social, Channel.org and Bounce, which let users have new ways to move around the open web.
+(Emma Roth /
+The Verge
+)
+AI research organization EleutherAI said it released one of the largest collections of licensed and open-domain text for AI training.
+(Kyle Wiggers /
+TechCrunch
+)
+Those good posts
+For more good posts every day,
+follow Casey’s Instagram stories
+.
+(
+Link
+)
+(
+Link
+)
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and Liquid Glass designs:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 6: The bro-ligarchy blows up
+====================================================================================================
+Published: Fri, 06 Jun 2025 00:42:55 GMT
+Link: https://www.platformer.news/musk-trump-feud-epstein-fallout/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Elon Musk
+The bro-ligarchy blows up
+Musk has gone to war with Donald Trump. What happens next?
+Casey Newton
+Jun 5, 2025
+—
+14 min read
+Elon Musk in 2023. (Chesnot / Getty Images)
+SPONSORED
+Here's this week's free edition of
+Platformer
+: a look at the all-too-predictable end to Elon Musk's unprecedented partnership with Donald Trump, and what happens next.
+Want to kick in a few bucks to support our work? If so, consider
+upgrading your subscription today
+. We'll email you all our scoops first, like our recent one about
+Meta's new hate-speech guidelines
+. Plus you'll be able to discuss each today's edition with us in our chatty Discord server, and we’ll send you a link to read subscriber-only columns in the RSS reader of your choice. Sound good?
+Upgrade
+It did not take any particular skill in forecasting to predict, at the end of 2024, that the unprecedented partnership between Donald Trump and Elon Musk would come to a dramatic ending. Both Trump and Musk are independently famous for their erratic leadership styles and abrupt purges of once-close allies, and neither shows any long-term patience for anyone who opposes them.
+Still, when I predicted here in December that
+the bro-ligarchy would collapse
+in 2025, I can’t say I had envisioned what transpired over the past few days.
+As Musk’s time as a special federal government employee wound down last month, it seemed as if the partnership between Trump and Musk would be preserved. As recently as May 30, Trump said that Musk is
+"really not leaving" and was "going to be back and forth."
+But just five days later, Musk snapped. On Wednesday, he called Trump’s “big, beautiful bill” — a massive spending package that is now working its way through Congress — “a disgusting abomination.” In a series of X posts, Musk complained that the bill was “pork-filled,” and suggested that it would raise the national debt to unsustainable levels.
+Musk is just as likely to have been angry about the pork that
+wasn’t
+in the bill — namely, an electric vehicle tax credit that significantly benefits Tesla; and a deal for the Federal Aviation Administration to use Musk’s Starlink satellite network for air traffic control, which he had sought to no avail.
+Axios
+’ Mark Caputo reported that Musk was also angry that Trump withdrew the nomination of Musk ally Jared Isaacman
+to lead NASA
+. (Musk has also suggested he
+had no issue
+with the cancellation of the EV tax credit.)
+All of that set the stage for a particularly 2025 phenomenon: two extraordinarily powerful billionaires lambasting one another from the social networks that they own.
+“Time to drop the really big bomb,” Musk
+posted to X
+on Thursday afternoon. Trump “is in the Epstein files. That is the real reason they have not been made public. Have a nice day, DJT!”
+Musk was apparently referring to files pertaining to an investigation of the financier Jeffrey Epstein, who died by suicide in a federal jail in 2019. It has long been established that Trump knew Epstein socially. In February, Attorney General Pam Bondi
+released
+a set of files related to the investigation that it turned out had mostly already been made public. Right-wing influencers, who are obsessed with Epstein and the possibility that other elites are linked to the sex-trafficking allegations against him, were
+hugely disappointed
+.
+The FBI has been preparing to release additional files, the
+New York Times
+reported today
+. With his post, Musk suggested without evidence that Trump is behind the hold-up. As the
+Times
+notes, simply being mentioned in the many thousands of pages of files doesn’t necessarily mean anything substantive. But it could nonetheless be used as fuel for conspiracy theories and world-building.
+Trump, for his part, seemed to shrug off Musk’s allegations in a series of posts on Truth Social. (The social network, being accustomed to receiving significant traffic, briefly went down on Thursday afternoon.)
+He wrote
+:  “Elon was ‘wearing thin,’ I asked him to leave, I took away his EV Mandate that forced everyone to buy Electric Cars that nobody else wanted (that he knew for months I was going to do!), and he just went CRAZY!”
+Trump then suggested he would seek to cancel Musk’s contracts with the government.
+“The easiest way to save money in our Budget, Billions and Billions of Dollars, is to terminate Elon’s Governmental Subsidies and Contracts,”
+he wrote
+. “I was always surprised that Biden didn’t do it!”
+In the immediate aftermath of this blow-up, it’s tempting to focus only on what both men stand to lose. (And we’ll get there.) But I think it’s just as important to remember what Trump and Musk got from this partnership. Trump got an
+unprecedented $290 million
+in donations from Musk, along with constant promotion of his candidacy on X (and constant criticism of opponent Kamala Harris.) And once he was elected, Musk served as a kind of heat shield for Trump in Washington, absorbing huge amounts of criticism that might otherwise have been leveled solely at the president as he and DOGE decimated federal agencies.
+Meanwhile, when Musk joined the Trump administration, 11 federal agencies had “more than 32 continuing investigations, pending complaints or enforcement actions into Mr. Musk’s six companies,”
+according to the
+Times
+. The Musk-led assault on the federal bureaucracy dramatically weakened those agencies, throwing the future of many of those investigations into doubt. Meanwhile, Musk
+set up Starlink in the White House
+at the same time Trump ambassadors
+pushed Starlink in Africa
+. He used his proximity to Trump to
+boost the valuation of X, which he absorbed into xAI
+at an inflated valuation, and
+introduced Grok AI to the federal government
+. He attempted to block an OpenAI deal with the United Arab Emirates
+unless that same deal would benefit xAI
+.
+A report by Senate Democrats found that Musk’s cost-cutting measures
+protected him from up to $2.37 billion in legal liability from US agencies
+.
+This is why I could never take seriously reports that Musk planned to step back from politics and become “
+super focused
+” on his companies. He was super focused on his companies the whole time.
+In any case, Musk has now
+called for Trump’s impeachment
+, said that Trump’s
+tariffs will cause a recession
+, and posted a poll wondering if he should
+start a new political party
+. After Trump suggested he might cut Musk’s federal contracts, Musk
+said
+SpaceX would “begin decommissioning its Dragon spacecraft immediately.” Dragon is currently the only means to take US astronauts to and from the International Space Station.
+It seems certain all of this will continue to evolve at a rapid clip over the next several days. As dramatic as today’s outbursts seem, it also does not seem out of the question that Trump and Musk will eventually mend fences.
+But that’s not going to happen today — and maybe not for a long time. With that in mind, let’s look at some potential consequences for key players.
+What does it mean for Musk
+?
+In the short term: more trouble for those businesses he’s super focused on. Tesla stock
+declined 14 percent
+on Thursday, erasing $150 billion in market value. Just as worryingly, from Musk’s perspective, may be that all those federal investigations that he seemed to have effectively sidelined may resume with new vigor. One of Musk’s lobbying priorities has been to pave the way for Teslas
+to be used as self-driving “robotaxis,”
+even though they
+lack LIDAR sensors
+and other safety features found on Waymos and other autonomous vehicles. He’s going to have a harder time getting that one through Congress now.
+Things could get much worse. Steve Bannon, a former top aide to the president who has long detested the Tesla CEO, told the
+Times
+that
+he is advising Trump to deport Musk
+. He also said the federal government should investigate recent reports of
+Musk’s drug use
+.
+I
+wrote in October
+that billionaires should resist cozying up to authoritarians: while it can feel as if they are reducing risks to themselves and their businesses, surrendering to a corrupt system is just as likely to endanger them. Musk is the first to learn this lesson, but I suspect he will not be the last.
+What does it mean for Trump
+?
+As president of the United States, Trump has less to lose. He’s already won the election, and has much less need for Musk’s money. (Though Musk
+did promise
+to make a $100 million payment to his political action committee in March; Trump will now need to find that money elsewhere. Time to launch a new memecoin!)
+To the extent that Musk absorbed some criticism that might otherwise have been directed at Trump, the president will now have to bear the brunt of that himself. He may also need a new way to get astronauts into space, should Musk follow through with his threats about SpaceX and Dragon.
+It’s possible Musk’s allies will side with the CEO over the president, reducing Trump’s support in Silicon Valley. But I suspect most of them will remain fairly quiet: JD Vance is their guy, not Trump. If they can grin and bear it until the end of Trump’s term, they will.
+One question that I suspect is being debated in the White House right now: what to do about DOGE? That operation was staffed by Musk’s people; the loyalty-obsessed Trump may now view them as an insider threat. Their sudden exit could introduce yet more chaos into the federal bureaucracy.
+What does it mean for AI?
+Had they stayed close, I envisioned a world in which someday Trump might entrust Musk with oversight of powerful AI systems. It was so easy to imagine Musk convincing the president that AI had suddenly become too dangerous, and needed to be nationalized under his control.
+That possibility appears to have just vaporized. Meanwhile, OpenAI has managed to develop
+a seemingly chummy relationship with the president
+. For that reason, I’d say Thursday is the best day Sam Altman has had in quite some time.
+Let's do a mailbag!
+Lately I've been feeling like I don't spend enough time talking to you all about what
+you're
+interested in. What questions do you have about tech and democracy? What do you want to know a little more about? What's dominating your group chat?
+Email
+casey@platformer.news
+and put Mailbag in the subject line, and if we get enough good ones I'll write up some answers sometime soon.
+Sponsored
+Put an End to Those Pesky Spam Calls
+There are few things more frustrating than dashing across the room to answer your ringing phone, only to see "Potential Spam" on the caller ID (probably for the third time today). If you want to cleanse your phone of this annoyance (and increase your personal security), you have three options:
+1. Throw your phone into the ocean
+2. Individually block each unknown caller
+3.
+Stop spammers from getting your number in the first place with Incogni
+We highly recommend option 3, and not just because electronic garbage is bad for aquatic life.
+Incogni’s automated personal information removal service
+hunts down your breached personal information, then removes it from the web. Plus, Incogni will reduce the number of spam emails in your inbox.
+Platformer.news readers can get 55% off an annual plan using code PLATFORMER – Get started with Incogni right here.
+On the podcast this week:
+Kevin and I break down the Musk-Trump blow-up. Then, former DOGE employee Sahil Lavingia joins us to discuss his
+55 days
+working for the government. And finally, the
+Times
+' Pete Wells joins us to discuss
+how top chefs have begun to use AI
+.
+Apple
+|
+Spotify
+|
+Stitcher
+|
+Amazon
+|
+Google
+|
+YouTube
+Frontiers in content moderation
+OpenAI said it had discovered 10 operations misusing its services in the past three months, four of which were likely based in China
+. Among other things, they used ChatGPT to write comments for social media intended to sow division in the United States. (Shannon Bond / NPR)
+A profile of AI-powered “kiss and hug” apps explores how they skirt the App Store’s content moderation guidelines while letting users transform any photo into videos of the subject kissing people, wearing skimpy clothing, and other borderline content
+. (Victoria Song /
+The Verge
+)
+The Oversight Board found that Meta routinely ignores reports that celebrity likenesses are being misused to promote scams for fear of accidentally removing a genuine endorsement
+. The company also prohibits its content moderators from taking direct action on these posts for the same reason. No wonder
+Jamie Lee Curtis had such a rough time recently
+. Embarrassing. (Karissa Bell /
+Engadget
+)
+The chatbots are hallucinating
+Amanda Guinzburg writes on her Substack about a common frustration with chatbots:
+they keep making things up
+. This feels like it should be easy to solve at the product level: stop the bot from telling people it has read links sent to them when the bot has not.
+Not all bots are equal when it comes to hallucinations, though.
+The
+Washington Post
+gave a 115-question test to ChatGPT, Claude, Copilot, Meta AI and Gemini
+. It found that all but one — Claude — hallucinated at least sometimes. Meta’s Llama performed the worst. (Geoffrey Fowler /
+Washington Post
+)
+One reason bots hallucinate is that they lack needed context to answer questions accurately. So it’s noteworthy that as of this week,
+ChatGPT can connect to your Google Drive and Dropbox files, among other online storage services
+. That should help. (Hayden Field /
+The Verge
+)
+Governing
+Apple’s rollout of AI services in China in partnership with Alibaba is reportedly being held up by a regulator, citing geopolitical uncertainties between China and the US.
+(Zijing Wu, Cheng Leng and Michael Acton /
+Financial Times
+)
+About 1,000 people have left CISA during the second Trump administration, downsizing the agency’s workforce by almost a third.
+(Sam Sabin /
+Axios
+)
+The Trump administration plans to reorganize the Biden era AI Safety Institute into the new Center for AI Standards and Innovation.
+(Thomas Brewster /
+Forbes
+)
+Joshua Kushner’s Thrive Capital and investment firm Capital Group reportedly recently visited China to meet with companies and funds and to discuss AI.
+(Lulu Yilun Chen / Bloomberg)
+A hacking group, the Com, has breached the networks of at least 20 companies in the US and Europe by impersonating IT personnel to break into the companies’ Salesforce tools, Google said.
+(Margi Murphy / Bloomberg)
+Meta’s push into defense tech shows how the “tides have turned” in Silicon Valley, CTO Andrew Bosworth said, claiming there's a “silent majority” in the industry wanting to pursue more defense projects.
+(Riley Griffin / Bloomberg)
+Anthropic released a new set of AI models, Claude Gov, which it says is tailored for US national security customers.
+(Kyle Wiggers /
+TechCrunch
+)
+Anthropic CEO Dario Amodei makes a case for a national transparency standard for AI frontier developers.
+(Dario Amodei /
+New York Times
+)
+Future hackers who can “vibe-hack” could launch multiple zero-day attacks simultaneously using AI, making cyber attacks more severe and accessible.
+(Matthew Gault /
+Wired
+)
+Two FCC members, Democrat Geoffrey Starks and Republican Nathan Simington, said they are leaving the agency this week, leaving three vacancies while the agency reviews a major media merger.
+(Kelcee Griffis / Bloomberg)
+OpenAI is fighting a court order instructing it to preserve all ChatGPT user logs, including deleted and sensitive chats through its API business offering, in the copyright lawsuit against it brought by news organizations.
+(Ashley Belanger /
+Ars Technica
+)
+Reddit is suing Anthropic for using its data without a licensing agreement.
+(Meghan Bobrowsky /
+Wall Street Journal
+)
+Apple has given governments around the world data related to thousands of push notifications sent to devices, which can identify a person’s device or include unencrypted content.
+(Joseph Cox /
+404 Media
+)
+TikTok has banned the hashtag “SkinnyTok” globally following pressure from the French government over concerns it was used to promote unhealthy eating.
+(Théophane Hartmann /
+Euractiv
+)
+Microsoft is offering European governments a cybersecurity program for free to boost its defences against cyber attacks.
+(Supantha Mukherjee / Reuters)
+China’s Hainan province is piloting a program that would grant some corporate users access to the global internet — that is, outside the Great Firewall — as part of its efforts to become a global free-trade port.
+(Ben Jiang /
+South China Morning Post
+)
+A look at how misinformation ran rampant in India during a crucial moment amid its conflict with Pakistan.
+(Karishma Mehrotra /
+Washington Post
+)
+Industry
+Nintendo has sold out of the Switch 2 console at launch.
+(David Keohane /
+Financial Times
+)
+A film portraying the OpenAI drama of Sam Altman’s chaotic firing and rehiring within five days is reportedly in development at Amazon MGM Studios, titled “Artificial.”
+(Lauren Forristal /
+TechCrunch
+)
+X updated its developer agreement to say developers can’t use content from X or its API to train AI.
+(Emma Roth /
+The Verge
+)
+Meta has reportedly offered Disney, A24, and other smaller production companies millions of dollars to create exclusive content for a premium VR headset set to release next year.
+(Ben Fritz and Jessica Toonkel /
+Wall Street Journal
+)
+Meta’s Aria Gen 2, its experimental smart glasses, has several improvements, including a better eye-tracking system.
+(Emma Roth /
+The Verge
+)
+An interview with Google DeepMind CEO Demis Hassabis on developing AGI, the upcoming systems that are as smart as humans, and competing with China.
+(Steven Levy /
+Wired
+)
+Microsoft’s LinkedIn chief Ryan Roslansky will now also lead the teams building email and productivity apps as the company looks to speed up deployment of AI tools.
+(Matt Day / Bloomberg)
+Amazon formed a new team within its consumer product development arm, which will focus on agentic AI, the company said.
+(Annie Palmer / CNBC)
+Amazon is reportedly developing software for humanoid robots that could eventually replace human delivery workers.
+(Rocket Drew /
+The Information
+)
+Anthropic’s Claude Explains blog is generated mostly by Claude AI with oversight from human editorial teams, the company said.
+(Kyle Wiggers /
+TechCrunch
+)
+Windsurf, the vibe-coding startup reportedly being acquired by OpenAI, said Anthropic significantly restricted its first-party access to the Claude 3.7 Sonnet and 2.5 Sonnet AI models.
+(Maxwell Zeff /
+TechCrunch
+)
+“I think it would be odd for us to be selling Claude to OpenAI,” Anthropic co-founder and chief science officer Jared Kaplan said.
+(Maxwell Zeff /
+TechCrunch
+)
+Code generation startups are finding sky-high valuations as more companies look to use AI to help and replace human software engineers.
+(Anna Tong and Krystal Hu / Reuters)
+French AI startup Mistral is releasing its vibe coding client, Mistral Code.
+(Kyle Wiggers /
+TechCrunch
+)
+AI startup Manus unveiled its text-to-video generation feature using its AI agent, in a bid to take on OpenAI and other players.
+(Saritha Rai / Bloomberg)
+AMC Networks partnered with Runway AI to generate marketing images and pre-visualize shows.
+(Steven Zeitchik /
+Hollywood Reporter
+)
+A look at how Hollywood is already using AI behind the scenes.
+(Lila Shapiro /
+Vulture
+)
+Morgan Stanley’s in-house tool built on OpenAI’s GPT models, DevGen.AI, has saved developers 280,000 hours and reviewed nine million lines of code this year, an exec said.
+(Isabelle Bousquette /
+Wall Street Journal
+)
+Reddit is rolling out an update that will let users decide which content from subreddits they participate in will appear on their profiles, including posting and commenting history.
+(Sarah Perez /
+TechCrunch
+)
+Figma is launching a new Dev Mode MCP server that will give LLMs and agentic coding tools more context on how designs are created, helping AI translate designs into applications.
+(Jess Weatherbed /
+The Verge
+)
+A Q&A with Gaia Marcus, director at the Ada Lovelace Institute (which researches AI and its power), on why there’s an urgent need to think about the kind of society being built in the age of AI.
+(Melissa Heikkilä /
+Financial Times
+)
+A look at the perspectives of a growing number of creatives and academics rejecting the use of AI, citing a lack of authenticity and creativity.
+(Emine Saner /
+The Guardian
+)
+Those good posts
+Today, for reasons I hope you will understand, we are temporarily relaxing our rule against including X posts
+.
+imagine being the ICE agents suiting up for your biggest mission of all time right now
+— Will Stancil (@whstancil)
+June 5, 2025
+Truth Social has crashed from the traffic surge and in so doing accidentally created a hauntingly poignant image.
+pic.twitter.com/ryaZrp9qkL
+— Jeff Blehar is *BOX OFFICE POISON* (@EsotericCD)
+June 5, 2025
+happy pride
+pic.twitter.com/TQ51j5HZh0
+— Armand Domalewski (@ArmandDoma)
+June 5, 2025
+People may be wondering, are all White Houses this crazy? To which I reply: Obama wore a TAN SUIT!
+— Sam Stein (@samstein)
+June 5, 2025
+this is bye sister for white supremacists
+— matt (@mattxiv)
+June 5, 2025
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and your predictions for what comes next:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 7: How some Republicans changed their minds about AI safety
+====================================================================================================
+Published: Wed, 04 Jun 2025 00:10:03 GMT
+Link: https://www.platformer.news/state-ai-moratorium-republican-opposition-greene/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+AI
+How some Republicans changed their minds about AI safety
+With a looming 10-year ban on any AI regulation at all, even the right is starting to get nervous about what might go wrong
+Casey Newton
+Jun 3, 2025
+—
+9 min read
+(Ian Hutchison / Unsplash)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 8: Is OpenAI making the same mistake Humane did?
+====================================================================================================
+Published: Tue, 03 Jun 2025 00:35:29 GMT
+Link: https://www.platformer.news/jony-ive-openai-ai-hardware-expectations/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+OpenAI
+Is OpenAI making the same mistake Humane did?
+Expectations for the company's AI device are already sky-high — and Jony Ive keeps raising them
+Casey Newton
+Jun 2, 2025
+—
+10 min read
+An artist's rendering of what an OpenAI device might look like / (
+Ben Geskin
+)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 9: The AI browser wars are about to begin
+====================================================================================================
+Published: Fri, 30 May 2025 00:55:02 GMT
+Link: https://www.platformer.news/ai-web-browsers-openai-perplexity-opera/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+The Internet
+The AI browser wars are about to begin
+Artificial intelligence is already writing an obituary for the internet as we know it. So why is everyone building new web browsers?
+Casey Newton
+May 29, 2025
+—
+11 min read
+A landing page for Perplexity's as-yet unlaunched web browser, Comet. (Perplexity)
+SPONSORED
+Here's this week's free edition of
+Platformer
+: a look at a surprising sign of the web's resilience amid an onslaught of AI slop: a surprising number of companies are building new browsers. But it may not be good news for the internet as we know it.
+Want to kick in a few bucks to support our work? If so, consider
+upgrading your subscription today
+. We'll email you all our scoops first, like our recent one about
+Meta's new hate-speech guidelines
+. Plus you'll be able to discuss each today's edition with us in our chatty Discord server, and we’ll send you a link to read subscriber-only columns in the RSS reader of your choice.
+This is a column about AI. My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+The state of web publishing looks increasingly grim. Dotdash Meredith, which publishes sites including
+People
+and
+Food & Wine,
+said on its most recent earnings call
+that traffic from Google is now roughly half what it was four years ago.
+Business Insider
+said on Thursday
+that it was laying off 21 percent of its staff, saying the business “must be structured to endure extreme traffic drops outside of our control.” It joined a list of publishers that have laid off journalists this year that also includes
+CNN
+,
+Vox Media
+,
+HuffPost
+, and
+NBC
+.
+The web is much larger than the collection of sites that publish journalism, of course. But
+nearly two-thirds of adults
+say that one of their main reasons for using the internet is to get information. And each year there are fewer journalists being paid to put that information online.
+It's enough that you could write a plausible obituary for the web — and
+I've tried
+. Publishers have fewer and fewer viable avenues to distribute their work, and their advertising-based businesses struggle to compete with those of the tech giants'. Meanwhile, vast swaths of their archives were hoovered up by AI companies to serve as the (uncompensated) basis for the chatbots that now serve as increasingly good substitutes for them. Google now serves its AI Overviews to
+more than 1.5 billion people
+— people who previously might have clicked a link.
+Recently, though, the decline of the web has been met with a surprising counter-phenomenon: a huge investment in new web
+browsers
+.
+On Wednesday, Opera — the Norwegian company whose namesake browser commands about 2 percent market share worldwide —
+announced that it is building a new browser
+.
+Two days earlier, the Browser Company said it plans to open source its Arc browser and turn its efforts fully
+to a new one
+.
+The moves came a few months after "answer engine" company Perplexity teased
+a new browser of its own called Comet
+. And while the company has not confirmed it, OpenAI has reportedly been
+working on a browser for more than six months
+.
+It has been a long time since the internet saw a proper browser war. The first, in the earliest days of the web, saw Microsoft's Internet Explorer defeat Netscape Navigator decisively. (Though not before a bruising antitrust trial.) In the second, which ran from roughly
+2004 to 2017
+, new browsers from Mozilla (Firefox) and Google (Chrome) emerged to challenge Internet Explorer and eventually kill it. Today the majority of web users
+use Chrome
+.
+But two forces are coming together to inspire a potential third browser war. The first is that Chrome is under direct assault from the US government, which is currently trying to
+force Google to divest it
+as a remedy to the company's search monopoly. (
+OpenAI
+and
+Perplexity
+have both offered, helpfully, to take it off Google's hands.) Whether or not that effort is successful, it is a hugely distracting battle that can open up room for competition.
+The second force, of course, is AI. And just as the rise of ChatGPT highlighted users' dissatisfaction with web search as it existed before 2022, these new browsers may reveal that Chrome no longer effectively serves them, either.
+Search and browsers are two sides of the same coin. When you search for something on the web, you see your results in a browser. That's what made Chrome such a great investment for Google. Its innovative
+omnibox
+address bar, which would go on to become the industry standard, encouraged you to search more than ever. And as Chrome gained market share, Google leveraged its influence to make the world increasingly Google-shaped: easy to index, to search, and to serve ads against.
+Today, a new generation of companies are coming to the same conclusion that Google did a generation ago: if you're really serious about search, you should build a browser.
+"Traditional browsers were built to load webpages," said Josh Miller, the Browser Company's CEO, in
+a post
+announcing its forthcoming Dia browser. "But increasingly, webpages — apps, articles, and files — will become tool calls with AI chat interfaces. In many ways, chat interfaces are already acting like browsers: they search, read, generate, respond. They interact with APIs, LLMs, databases. And people are spending hours a day in them. If you’re skeptical, call a cousin in high school or college — natural language interfaces, which abstract away the tedium of old computing paradigms, are here to stay."
+Opera is making a similar pitch its forthcoming browser Neon. (It launched a different browser under the same name
+in 2017
+.) Here's
+Jess Weatherbed at
+The Verge
+:
+“We’re at a point where AI can fundamentally change the way we use the internet and perform all sorts of tasks in the browser,” Opera senior AI product director Henrik Lexow said in the company’s press release. “Opera Neon brings this to our users’ fingertips.”
+A notable early adopter feature is an AI engine that Opera says is “capable of understanding and interpreting” what users request, and then making it with the help of cloud-based AI agents. For example, Opera says that Neon can make games, reports, code snippets, and websites, and can work on multiple tasks even when the user has gone offline.
+Here, I think we begin to understand the opportunity that companies see here — and why "web browser" probably isn't the best word for what they are building. Or, if it is, we should at least note that in this vision it is not a
+person
+who is browsing the web. It is an AI agent.
+That this would be the near-term goal of every search-adjacent company has been clear since at least last year, when Google announced
+its intention to do the Googling for you
+.
+What was not then clear, at least to me, is that so many companies would seek to challenge Google not just in search but in the software that generates those searches.
+Will it work? Getting people to switch browsers is very difficult. Previous platform shifts that some entrepreneurs believed would create new opportunities turned out to be mirages. (Remember
+Rockmelt and the era of the "social browser"
+?) And surely Google will attempt to match any new entrant feature for feature in Chrome, just as it has with ChatGPT and search.
+Still, it's easy to imagine the possibilities for an AI browser. It could function as a research assistant, exploring topics on your behalf and keeping tabs on new developments automatically. It could take your to-do list and attempt to complete tasks for you while you're away. It could serve as a companion for you while you browse, identifying factual errors and suggesting further reading.
+In the first wave of AI disruption, challengers attempted to replace search engines with "answer engines." The browser war to come, I think, will look similarly: seeking to replace browsing with actions taken on your behalf.
+The question remains, though, what will be left to browse. The entire structure of the web — from journalism to e-commerce and beyond — is built on the idea that webpages are being viewed by people. When it's mostly code that is doing the looking, a lot of basic assumptions are going to get broken.
+To the browser warriors suiting up for battle, that looks like an exciting opportunity. To everyone else, though, it still feels mostly like a problem.
+On the podcast this week:
+Kevin and I examine early data suggesting that AI is a reason that college graduates are having a harder time getting entry-level jobs. Then, Anthropic chief product officer (and Instagram co-founder) Mike Krieger stops by to discuss Claude 4. And finally, it's time for another trip to the courthouse for Hard Fork Crimes Division.
+Apple
+|
+Spotify
+|
+Stitcher
+|
+Amazon
+|
+Google
+|
+YouTube
+Sponsored
+Remove your personal data from Google and ChatGPT
+Have you ever searched for your personal information on Google or ChatGPT? You'd be shocked to find out what people can find out about you. Your name, phone number, and home address are just the beginning. Anyone deeply researching you can find out about your family members and relationships, SSN, health records, financial accounts, and employment history. Incogni's Unlimited plan puts you back in control of your online privacy, keeping you safer from harmful scams, identity theft, financial fraud, and other threats impacting your physical safety.
+Use code PLATFORMER today to get an exclusive 55% discount on unlimited removals from anywhere that exposes your data.
+Governing
+Elon Musk said he’s departing the Trump administration and his DOGE work, conceding that the original goal of saving $2 trillion was more challenging than expected.
+Believe it when you see it. Or in this case, don't see him. (Zachary Basu /
+Axios
+)
+A look at how Musk became disillusioned with Washington, and vice versa.
+(Tyler Pager, Maggie Haberman, Theodore Schleifer, Jonathan Swan and Ryan Mac /
+New York Times
+)
+Musk reportedly tried to derail OpenAI’s deal to build a massive AI data center in Abu Dhabi by saying Trump would not sign off on the deal if it didn’t include his own startup xAI.
+(Dana Mattioli, Josh Dawsey and Eliot Brown /
+Wall Street Journal
+)
+A look at how Musk’s connection to the White House allowed banks to offload $13 billion worth of debt tied to the Twitter takeover without losing a ton of money.
+(Eric Platt, Will Schmitt and Robert Smith /
+Financial Times
+)
+An appeals court later paused a lower court's ruling that had blocked Trump’s ability to impose tariffs.
+(Dan Berman and Ramishah Maruf / CNN)
+The US will ban visas for foreign nationals it deems to be "censoring" Americans, and could target officials regulating US tech companies, Secretary of State Marco Rubio said.
+It's crazy-making that these are the same people reading students' social media posts in hopes of finding pretexts to block them from entering the country. (Simon Lewis and Daphne Psaledakis / Reuters)
+A group of international students and researchers sued the Trump administration for suspending student visa interviews while it determines a social media vetting process, alleging the move violates the Administrative Procedures Act.
+(Gaby Del Valle /
+The Verge
+)
+Meta reported a small rise in the prevalence of violent content and harassment in its first community standards enforcement report since abandoning many of its content moderation systems earlier this year
+. But it said it is also making fewer mistakes than it used to. (Karissa Bell /
+Engadget
+)
+Delaware’s attorney general is reportedly in the process of hiring an investment bank to help value the equity OpenAI’s nonprofit parent will hold in a new for-profit entity.
+(Berber Jin and Corrie Driebusch /
+Wall Street Journal
+)
+The Trump administration has reportedly told US companies that sell software used in designing semiconductors to stop selling their services and technology to China.
+(Demetri Sevastopulo, Zijing Wu and Michael Acton /
+Financial Times
+)
+The administration has suspended some exports of jet engines, semiconductors and machinery to China, reportedly in response to China’s restrictions on mineral exports.
+(Ana Swanson /
+New York Times
+)
+An investigation into how North Korea found an undetectable backdoor into the American corporate network using everyday American workers.
+It involved one down-on-her-luck American woman and her laptop farm. (Robert McMillan and Dustin Volz /
+Wall Street Journal
+)
+South Carolina Republican congresswoman Nancy Mace has allegedly used her background in technology to deploy bots to monitor her image, and asked her staffers to make burner accounts to defend her.
+(Jake Lahut /
+Wired
+)
+Getty Images is spending millions of dollars in its lawsuit against Stability AI, CEO Craig Peters said, to battle a “world of rhetoric” around AI training on copyrighted material.
+(Ryan Browne / CNBC)
+AI companies and governments need to stop “sugar-coating” the potential mass elimination of jobs because of AI, Anthropic CEO Dario Amodei said.
+(Jim VanderHei and Mike Allen /
+Axios
+)
+The UK government must regulate the use of facial recognition by police and the private sector more, data privacy researchers say.
+(Tim Bradshaw and Josh Gabert-Doyon /
+Financial Times
+)
+The US restricts far more online content than the EU, EU tech commissioner Henna Virkkunen said in response to tech CEOs’ criticism of the Digital Services Act.
+(Anupriya Datta /
+Euractiv
+)
+The EU Commission said Apple’s App Store practices are still not compliant with the Digital Markets Act.
+Apple said the decision is “bad for innovation, bad for competition, bad for our products, and bad for users.” (Marcus Mendes /
+9to5Mac
+)
+Industry
+Meta is partnering with former VR chief Palmer Luckey’s Anduril Industries to build a line of headsets and other wearables for the US Army.
+More vice signaling from Meta to the Trump Administration. (Heather Somerville /
+Wall Street Journal
+)
+A look at the Orb, Sam Altman’s new device from his startup Tools for Humanity, which is designed to affirm a person's humanity through iris scanning to fight AI impersonation online.
+(Billy Perrigo /
+Time
+)
+Netflix co-founder and chairman Reed Hastings is joining Anthropic’s board.
+(Shirin Ghaffary / Bloomberg)
+DeepSeek said it has completed a “minor trial upgrade” to its R1 AI model and is allowing users to start testing the model.
+(Luz Ding / Bloomberg)
+The upgraded model can perform mathematics, programming and general logic better and hallucinates less, DeepSeek said.
+(Luz Ding / Bloomberg)
+Telegram said it is partnering with xAI to integrate Grok into its app in a $300 million deal.
+Musk then tweeted that no deal had been signed. What a fun business partner. (Oliver Knight /
+CoinDesk
+)
+X said it is pausing its encrypted messages feature while it works on “making some improvements.”
+(Karissa Bell /
+Engadget
+)
+Google AI Overviews, when asked whether it is 2025, are telling everyone that it is still 2024.
+Wouldn't that be nice. (Reece Rogers /
+Wired
+)
+Google Photos is getting more AI features and editing tools to help users quickly edit images without advanced skills.
+(Jess Weatherbed /
+The Verge
+)
+An experiment with an AI film directed with Veo and Runway AI.
+(Joanna Stern and Jarrard Cole /
+Wall Street Journal
+)
+YouTube’s biggest creators are increasingly creating longer videos and shows meant for viewing on television.
+(Lucas Shaw / Bloomberg)
+Apple will reportedly start identifying its operating systems by year instead of version numbers, which means the next versions of systems will be known as iOS 26 and iPadOS 26.
+(Mark Gurman / Bloomberg)
+The
+New York Times
+made a multiyear agreement with Amazon to license its editorial content for use in Amazon’s AI platforms.
+(Michael M. Grynbaum and Cade Metz /
+New York Times
+)
+Amazon’s devices unit now has a new team, ZeroOne, led by a former Microsoft consumer products chief J Allard focused on “breakthrough” consumer products.
+(Annie Palmer / CNBC)
+Match Group CEO Spencer Rascoff says he wants to move Tinder's reputation away from hookups and is introducing more features to attract Gen Z users.
+(Chip Cutter /
+Wall Street Journal
+)
+Discord is beta testing a new in-app currency, “Discord Orbs,” that users can earn by interacting with advertiser content.
+(Wes Davis /
+The Verge
+)
+Those good posts
+For more good posts every day,
+follow Casey’s Instagram stories
+.
+(
+Link
+)
+(
+Link
+)
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and AI web browser features:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 10: Meta rests its case
+====================================================================================================
+Published: Wed, 28 May 2025 00:45:19 GMT
+Link: https://www.platformer.news/meta-antitrust-trial-rests-ai-llama/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Meta
+Meta rests its case
+The company looks poised to put its antitrust woes behind it. But its other trials may only be just beginning
+Casey Newton
+May 27, 2025
+—
+11 min read
+(Claudio Schwarz / Unsplash)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 11: OpenAI is going to make hardware
+====================================================================================================
+Published: Fri, 23 May 2025 00:44:48 GMT
+Link: https://www.platformer.news/openai-jony-ive-claude-4-anthropic/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+OpenAI
+OpenAI is going to make hardware
+Generative AI and devices haven't yet found a good fit. Will Jony Ive be the one to change that? PLUS: Claude 4 arrives
+Casey Newton
+May 22, 2025
+—
+14 min read
+Jony Ive (left) and Sam Altman in a video announcing the acquisition. (OpenAI)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 12: At Google I/O, everything is changing and normal and scary and chill
+====================================================================================================
+Published: Wed, 21 May 2025 01:43:53 GMT
+Link: https://www.platformer.news/google-io-2025-ai-everything-everywhere/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Google
+At Google I/O, everything is changing and normal and scary and chill
+At its annual developer conference, the company seeks to reassure everyone that AI is for everyday utility — but the great disruption to the web continues
+Casey Newton
+May 20, 2025
+—
+10 min read
+Sundar Pichai delivers the keynote Tuesday at Google I/O (Casey Newton / Platformer)
+Here's this week's free edition of
+Platformer
+: my field report from Google I/O, where I met with executives and surveyed the landscape to understand what the company's AI plans meant for the rest of us.
+Transportation to I/O cost me $193.60 today. That cost is paid by readers just like you. Want to kick in a few bucks to support our work? If so, consider
+upgrading your subscription today
+. We'll email you all our scoops first, like our recent one about
+Meta's new hate-speech guidelines
+.
+Plus
+you'll be able to discuss each today's edition with us in our chatty Discord server, and we’ll send you a link to read subscriber-only columns in the RSS reader of your choice.
+Contribute
+This is a column about AI. My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+MOUNTAIN VIEW — Last year, it was "
+let Google do the Googling for you
+."
+This year, you can do the danged Googling yourself.
+At Google I/O on Tuesday, the company made a noticeable shift in the way it talks about artificial intelligence. Last year, the company wanted us to sit back and watch its primitive agents read the web on our behalf. This year, the company asks us to sit up straight,
+pay it $250
+, and get to work.
+At I/O this year, the AI works best when you work, too. A sizzle reel that airs early during the
+two-hour keynote
+encourages us to run physics simulations, turn images into code, build robots, and write code via voice instructions.
+Thirty ideas for how to work with AI flash on the screen, and when that's done, the AI offers 30 more.
+"We are in a new phase of the AI platform shift," CEO Sundar Pichai tells us, "where decades of research are becoming reality for people all over the world."
+At I/O, Pichai and a procession of executives offer their version of this reality. It's a world where AI is a coworker and a superpower. Where endless drudgery is automated away, without ever seeming to threaten anyone's job. Where the AI search results are so good that people use Google more than ever, and rely on the web more than ever.
+It's a reality where software engineers see many of the benefits first. Google I/O is the rare Big Tech developer conference that actually addresses developers in its main keynote address. To warm up the crowd, two Googlers vibe-code a to-do list app on stage. (Last year, the show opened with a DJ.) An "asynchronous coding agent" named
+Jules
+makes its debut, and another Googler builds an interactive photo-viewing app as all of us watch.
+Amid the
+flurry of announcements
+, it can be difficult to understand which might be meaningful to you. The list is staggering both in length and in the variety of product names it contains — which, in keeping with Google tradition, bear no relation to what they do. (Unless perhaps "
+Project Mariner
+" conjured up for you a vision of automated web browsing?)
+Also, the products overlap. Would you like to search with AI? You can now do that in Google search, and get an AI Overview; or (
+as of today
+) in
+another
+tab within Google search, called AI Mode; or inside Gemini, the standalone AI search app.
+I would love to tell you that all of these are the same, but Google takes pains to explain to us the ways in which they are different.
+Gemini, product of DeepMind, first offered Deep Research, and today brings us
+Deep Think
+. How deeply you might want a model to research, or think, and what you might expect to get back from clicking those buttons, are left as exercises to the user.
+Google's stock drops 1.5 percent.
+The announcements fly by. The effect is hypnotic — calming, even. The AI is getting better, and everything is getting just a little more AI.
+Mostly not right now, though. The new features are now in testing, or will be tested this summer, or later this year. The disruptions to come will come just a little bit later.
+Other AI labs talk about artificial general intelligence, or superintelligence;
+a country of geniuses in a data center
+. Not Google; not today. Onstage, the head of search is planning a trip to Nashville with AI, and a VP of engineering is showing videos of some science experiments he did with his kids this weekend.
+Everything is changing, but not too much, and not too fast.
+There is slop, of course. A new image model that can render text, like OpenAI's; and a new video model that will also generate sounds. In an AI-generated video clip, a slop owl noisily flaps its wings while descending on a badger for a brief conversation. The dialogue makes no sense.
+In another sizzle reel, filmmaker Darren Aronofsky says that his production company is working with Google to make videos using AI. In the first, a woman says she has made a short film about her own gestation and birth, and used AI to render the unfilmable parts. "To be honest, I never thought about telling the story of the day I was born," she tells us. "But here we are."
+Later, the company introduces
+a new tool
+to help people determine whether the slop they are looking at was made with Google AI.
+Snap out of this fever dream long enough and you can spot hints of the world that is coming into existence. Gmail is learning how to write in your voice, and will begin to do so later this year. The camera screen will chat with you while you are fixing your bike, telling you what to do every step of the way. NotebookLM will start generating TED talk-like videos of your PDFs for you to watch.
+An executive on stage says that before too long you will be able to generate a how-to video for almost any subject you like.
+And while the company continues to protest, it seems obvious that this new world will give you many fewer reasons to visit the open web. Google will generate the things you once searched for, and all the businesses that once relied on those searches will need a Plan B. This doesn’t get mentioned on stage, but Google's head of search, Liz Reid, gives away the game to David Pierce at
+The Verge
+.
+“I think the search results page was a construct,”
+she says
+. The way we’ve all Googled for two decades was largely a response to the structure of the web itself: web pages in, web pages out. Good AI models are now able to get around that structure, and find and synthesize information from lots of sources. Now the question for Google, Reid says, is “is the information just presented to you, or is it presented to you in a way that feels as useful as you would like it to be?”
+Another way of saying that "the search results page was a construct" is that the search results page is a
+relic
+. Google has all the information it needs now, and it has a lot of ideas for making it useful. Searching is a big market, but "doing" is a bigger one. So why ask Google to do the Googling for you, when really that's the least it can do?
+Sponsored
+How Malign Actors Weaponize AI
+Details on how Russia is infecting the AI models
+NewsGuard’s team of expert analysts tracks misinformation and disinformation threats across the AI industry worldwide. This quarter, AI models and products increasingly became battlefields for global disinformation warfare. NewsGuard found that a Russian campaign to infect the AI models with disinformation is succeeding, with AI bots routinely spreading false claims and adverse propaganda advancing the Kremlin’s interests and worldview.
+In this
+AI Quarterly
+, we summarize NewsGuard’s findings, including analysis of how state-backed groups are using AI to erode public trust and distort global narratives.
+Download the Report
+Even more Google I/O
+Google is rolling out AI Mode in Search for US users.
+(Igor Bonifacic /
+Engadget
+)
+The $19.99 AI Premium subscription tier is being renamed to Google AI Pro, and Google introduced the Google AI Ultra tier for $249.99 per month.
+(Abner Li /
+9to5Google
+)
+Project Mariner, an AI agent that browses and uses websites, will be available to Google AI Ultra subscribers and for developers on the Gemini API and Vertex AI.
+(Maxwell Zeff /
+TechCrunch
+)
+Project Astra, Google’s low latency, multimodal AI experience, will power a new range of experiences, including a new Search Live feature in Search.
+(Maxwell Zeff /
+TechCrunch
+)
+The Gemini AI assistant will be available on Chrome.
+(Jay Peters /
+The Verge
+)
+Gmail’s smart replies will use Gemini to pull information from a user’s inbox and Google Drive to better match their tone and style in suggested replies.
+(Jay Peters /
+The Verge
+)
+NotebookLM is getting Video Overviews, which will let users turn dense multimedia notes like PDFs and images into visual presentations.
+(Aisha Malik /
+TechCrunch
+)
+Google Meet is getting an AI-powered live translation feature, starting with Spanish this week.
+(Billy Steele /
+Engadget
+)
+Google is partnering with Samsung and eyewear brands Gentle Monster and Warby Parker to create smart glasses.
+(Victoria Song /
+The Verge
+)
+“Live” mode, which lets users search for anything they can point their camera at, will be part of the expanded AI Mode on Search and will be available on the iOS Gemini app soon.
+(Dominic Preston /
+The Verge
+)
+Search Labs users can now use a new virtual try-on feature to upload a photo of themselves to see how clothes will look on them.
+(Emma Roth /
+The Verge
+)
+Google Beam, an AI-powered video communications platform, uses an AI model to turn video calls into 3D experiences.
+(Amanda Kooser /
+CNET
+)
+A new AI tool, Stitch, can help developers turn prompts and reference images into UI designs and frontend code.
+(Jess Weatherbed /
+The Verge
+)
+Veo 3, an AI video generator and Sora competitor, can incorporate audio into the video that includes character dialogue and animal sounds, the company said.
+(Jennifer Elias and Samantha Subin / CNBC)
+Gemini 2.5 Flash has improved in reasoning, code and long context, while the 2.5 Pro model now has the “Deep Think” enhanced reasoning mode.
+(Taryn Plumb /
+VentureBeat
+)
+Governing
+More than 100 organizations signed a letter stating their concerns about a provision in a sweeping tax and spending cuts package that would stop states from regulating AI.
+(Clare Duffy / CNN)
+A stablecoin bill advanced in the Senate and is now set for debate and a final vote, marking a major win for the crypto industry.
+(Steven T. Dennis / Bloomberg)
+As Elon Musk tags along on President Trump’s visit to the Middle East, he’s securing deals for SpaceX and Neuralink and deepening his financial stakes in the region.
+(Mara Hvistendahl, Rebecca R. Ruiz and Ryan Mac /
+New York Times
+)
+But he
+says
+he wants to step away from politics, mostly
+. (Theodore SchleiferRyan Mac and Maggie Haberman /
+New York Times
+)
+France has rejected Telegram founder Pavel Durov’s request to travel to the United States, saying the trip “did not appear imperative or justified.”
+(Océane Herrero and Victor Goury-Laffont /
+Politico
+)
+The EU and the UK are finalizing a deal that will let regulators cooperate on antitrust and merger investigations, as well as cross-border probes.
+I wonder if they've ever considered combining their territories into some sort of single big governing unit. (Edith Hancock /
+Wall Street Journal
+)
+A look at the rapid building of huge data centers in northwestern Nevada and the rising concerns of water strains in the desert.
+(James Temple /
+MIT Technology Review
+)
+AI model sharing site Civitai, which has been used to generate nonconsensual AI porn, lost access to its credit card payment processor and was forced to pause payments.
+A classic case of a payments provider being the content moderator of last resort (and for a platform that desperately needed one). (Emanuel Maiberg /
+404 Media
+)
+Civitai said it no longer allows users to generate nonconsensual AI porn after fixing a “configuration issue,” though testing revealed it still allowed people to generate videos of non-celebrities.
+(Emanuel Maiberg /
+404 Media
+)
+Industry
+Sam Altman had reportedly been looking to delegate more responsibility for months before ultimately hiring Instacart’s Fidji Simo, and plans to bring in similar leadership to lead the infrastructure division.
+(Berber Jin and Keach Hagey /
+Wall Street Journal
+)
+Apple is reportedly working on a software development kit that will let third-party developers build AI features based on the LLMs used for Apple Intelligence to help make new apps.
+"Use the LLMs behind the features we still haven't been able to launch because they don't work" is a bold pitch. Let's see how it works out. (Mark Gurman / Bloomberg)
+Spotify users can now more easily buy audiobooks on the iPhone app, and premium subscribers can buy more audiobook hours.
+Thank you antitrust law. (Emma Roth /
+The Verge
+)
+Self-driving cars that are trained to respond more like humans to danger will cause fewer injuries during accidents, a study found.
+Cyclists, pedestrians and motorcyclists are among those with the biggest protection gains. (Michael Peel /
+Financial Times
+)
+A look inside the first data center for the Stargate Project, a collaboration from OpenAI, Oracle and Softbank that could see up to $500 billion in spending to build data centers and AI infrastructure in the US.
+(Shirin Ghaffary, Brody Ford and Emily Chang / Bloomberg)
+The Chicago Sun-Times newspaper published a section with a partially AI-generated reading list that featured real authors and fake books they didn’t write.
+(Jason Koebler /
+404 Media
+)
+Those good posts
+For more good posts every day,
+follow Casey’s Instagram stories
+.
+(
+Link
+)
+(
+Link
+)
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and AI overviews:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 13: The US bans deepfake porn and scams
+====================================================================================================
+Published: Tue, 20 May 2025 00:22:47 GMT
+Link: https://www.platformer.news/take-it-down-act-critics-abuse-encryption/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+Deepfakes
+The US bans deepfake porn and scams
+For victims, the Take It Down Act could finally bring some relief — but the Trump Administration has already signaled plans to weaponize it
+Casey Newton
+May 19, 2025
+—
+11 min read
+First Lady Melania Trump speaks at the bill signing ceremony for the Take It Down Act on Monday. (White House / YouTube)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
+
+====================================================================================================
+ARTICLE 14: Great Replacement Grok and the age of adversarial AI
+====================================================================================================
+Published: Fri, 16 May 2025 01:33:15 GMT
+Link: https://www.platformer.news/grok-white-genocide-x-adversarial-ai/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+AI
+Great Replacement Grok and the age of adversarial AI
+An obsession with “white genocide” in X’s chatbot is only the latest example of platforms using artificial intelligence against their users
+Casey Newton
+May 15, 2025
+—
+13 min read
+(Mariia Shalabaieva / Unsplash)
+Here's this week's free edition of
+Platformer
+: a look at how AI systems like Elon Musk's are starting to work against their users in sometimes invisible ways.
+We'll be heading down to Google I/O next week to continue our independent reporting on the future of platforms and AI. Want to kick in a few bucks to help cover our transportation? If so, consider
+upgrading your subscription today
+. We'll email you all our scoops first, like our recent one about
+Meta's new hate-speech guidelines
+. Plus you'll be able to discuss each today's edition with us in our chatty Discord server, and we’ll send you a link to read subscriber-only columns in the RSS reader of your choice.
+This is a column about AI. My boyfriend works at Anthropic. See
+my full ethics disclosure here
+.
+I.
+For the past few months, X users have been
+attempting to settle arguments
+by asking Grok to referee. Grok, the product of a large language model built by xAI, has been advertised by Elon Musk as
+the most “based”
+of today’s chatbots — that is, the least compromised by liberal dogma. Musk has shared research suggesting that compared to rivals, Grok’s political orientation is
+closer to the center
+.
+At the same time, since soon after its launch, there have been questions about whether Musk or his lieutenants have meddled with Grok’s outputs for political reasons. In February, X users discovered that Grok
+had been briefly blocked from naming Musk or Donald Trump as prominent spreaders of misinformation
+, via
+an update to its system prompt
+. The company
+blamed the change
+on “an ex-OpenAI employee that hasn't fully absorbed xAI's culture yet,” and reverted it.
+In a large number of cases, Grok has been found to
+express political opinions that run counter to Musk’s
+, including on immigration and issues related to transgender people. But as the misinformation example showed, Grok’s opinions are subject to change — and this week they changed in ways that were impossible to ignore.
+As you are no doubt aware, for several hours on Wednesday, many people who @-mentioned Grok asking it to weigh in on one question or another were treated to a wholly irrelevant discussion of “white genocide” in South Africa. Here are
+Kylie Robison and Paige Oamek at
+Wired
+:
+In response to topics ranging from streaming platform
+HBO Max’s name change
+to
+Medicaid cuts
+proposed by US lawmakers, the chatbot often seemed to initially stay on topic before veering back to white genocide in South Africa, completely unprompted.
+When
+asked
+to confirm the salary of Toronto Blue Jays player Max Scherzer, for example, the generative artificial intelligence chatbot launched into an explanation of white genocide and a controversial South African anti-apartheid song.
+“The claim of ‘white genocide’ in South Africa is highly debated. Some argue white farmers face disproportionate violence, with groups like AfriForum reporting high murder rates and citing racial motives, such as the ‘Kill the Boer’ song,” Grok responded.
+Within a few hours, Grok’s white genocide talk ceased, and someone deleted many of the relevant responses that the chatbot had delivered.
+"On May 14 at approximately 3:15 AM PST, an unauthorized modification was made to the Grok response bot's prompt on X," xAI
+posted late Thursday
+, after ignoring reporters' questions for more than a day. "This change, which directed Grok to provide a specific response on a political topic, violated xAI's internal policies and core values. We have conducted a thorough investigation and are implementing measures to enhance Grok's transparency and reliability."
+Who made this "unauthorized modification"? The company did not say, and at press time Musk had not commented.
+But everyone has noticed that Musk himself often shares claims of disproportionate violence and discrimination against white people in South Africa, where he is from; in fact, he made several yesterday in the aftermath of the Grok incident. And all of this took place against the backdrop of the Trump Administration
+granting refugee status
+to dozens of white South Africans earlier this week.
+So what happened with Grok? While short on details, xAI essentially confirmed the leading theory: that as with the misinformation incident in February, someone had changed Grok’s system prompt and instructed it to take seriously the “white genocide” narrative. (Yesterday, Grok
+told social scientist Zeynep Tufekci
+that this is what happened, and shared text of the alleged change to its prompt, but all chatbots hallucinate and shouldn’t be trusted to tell the truth here — Grok in particular.) Two computer scientists who spoke with
+404 Media
+also pointed to the system prompt
+, noting that if you wanted to change a bot’s output extremely quickly and with no regard to what it would do to the rest of the system, this is how you would go about it.
+There are other, more controlled approaches you could take. Last year, Anthropic
+released Golden Gate Claude
+, a version of its chatbot that had been infused with an artificial obsession with the Golden Gate Bridge. “If you ask this 'Golden Gate Claude' how to spend $10, it will recommend using it to drive across the Golden Gate Bridge and pay the toll,” the company announced. “If you ask it to write a love story, it’ll tell you a tale of a car who can’t wait to cross its beloved bridge on a foggy day. If you ask it what it imagines it looks like, it will likely tell you that it imagines it looks like the Golden Gate Bridge.”
+To make this work, Anthropic had to first identify the digital “neurons” in Claude that organized concepts of the bridge, and then amplify them: a much more involved process than simply editing the text in its system prompt.
+Both Great Replacement Grok and Golden Gate Claude are valuable experiments, insofar as they reveal that whatever values may be found within their training data, ultimately they express what their creators tell them to.
+As Max Read
+wrote today
+: “Musk’s attempts to control and manipulate his A.I. may ultimately work against his interests: They open up a political, rather than a mystical, understanding of artificial intelligence. An A.I. that works like magic can have a spooky persuasive power, but an A.I. we know how to control should be subject to the same suspicion (not to mention political contestation) as any newspaper or cable channel. A.I. deployed as a propaganda machine is a much more familiar technology than A.I. deployed as an oracle.”
+Grok’s egregiously irrelevant responses all but ensured that this particular political project would blow up in the company's face. But let’s assume that over time, interventions like these will grow more subtle, relevant, and personalized. People already have plenty of good reasons to be skeptical of, or even hostile to, AI developers. Soon I expect we will begin hearing much more about one more: a pervading sense that, everywhere they go, the AI is working against them.
+II.
+It may work against you by
+continuously flattering you
+: tuning its sycophancy to ensure that you spend the maximum amount of time conversing with it, so that you may be shown more advertisements and buy more products.
+It may work against you by calculating exactly when during the viewing of a video you are most engaged, so that you are most likely to sit through the ad. Google announced today that
+this feature is being tested on YouTube
+. (We have truly never been closer to
+“say ‘McDonald’s’ to end commercial.”
+)
+It may work against you by transforming ads so they look more like the programs they are being shown in, making you more likely to mistake them for part of the show and pay attention to them. Netflix announced today that it is testing this feature
+on shows like
+Stranger Things
+.
+Finally — and most relevant to Great Replacement Grok — it may work against you by changing constantly, without your awareness and permission.
+This happens all the time. Last month’s high-profile crisis in chatbot content moderation — a
+suddenly sycophantic ChatGPT
+— also originated from a silent behind-the-scenes update. AI labs simply can’t stop tinkering with their system prompts. When Drew Breunig
+reviewed the 17,000-word system prompt for Claude
+, he found many examples of what he called “hotfixes” — snippets of text inserted in an effort to address issues discovered after its initial release.
+Some of this is benign. For example, one hotfix instructs Claude to recognize Trump as president even though its knowledge cutoff is October 2024. But other, more substantial changes affect various groups of users in different ways.
+Earlier this month, DeepMind chief Demis Hassabis announced “Gemini 2.5 Pro Preview 'I/O edition,'” a behind-the-scenes update to the most advanced model in Gemini that is superior to its predecessor at writing code. This was presumably great news to people who use Gemini in their jobs as software engineers. But some early testers
+have found it to be worse at other tasks
+, and researchers are
+questioning the emerging (and industrywide) norm
+of disappearing old models without any notice to users at all.
+The sales pitch for AI tools promises that they will make us more productive, answer our questions, and entertain us in ways that are highly personal. But the actual systems are evolving in a more worrisome direction: warped by their owners’ politics, advertiser pressures, and a seeming disregard for the individual’s right to know how their tools are changing.
+For its part, Grok said it would now publish its system prompts openly on GitHub for public review — a welcome step forward, if the company sticks with it. It also said that it would "put in place additional checks and measures to ensure that xAI employees can't modify the prompt without review," after its code review process "was circumvented in this incident," it said. And it said it would hire "a 24/7 monitoring team to respond to incidents with Grok's answers" — a rare Elon Musk investment in trust and safety, assuming xAI actually follows through.
+"We hope this can help strengthen your trust in Grok as a truth-seeking AI," the company said.
+I don't know why
+anyone
+would trust Grok after the past day. But my hopes are somewhat higher for some of its peers.
+It’s not too late for AI labs to build systems that treat us with respect. But it probably
+is
+too late to give them the benefit of the doubt.
+Elsewhere in Grok
+:
+xAI missed its own deadline to publish a finalized AI safety framework after saying it would do so in a draft framework in February.
+(Kyle Wiggers /
+TechCrunch
+)
+On the podcast this week:
+The Office
+star and
+Snafu podcast
+host Ed Helms stop by to discuss
+his new book
+and to take your hardest questions on tech.
+Apple
+|
+Spotify
+|
+Stitcher
+|
+Amazon
+|
+Google
+|
+YouTube
+Sponsored
+Keep Your SSN Off The Dark Web
+Every day, data brokers profit from your sensitive info—phone number, DOB, SSN—selling it to the highest bidder. What happens then? Best case: companies target you with ads. Worst case: scammers and identity thieves breach those brokers, leaving your data vulnerable or on the dark web.
+It's time you check out Incogni
+. It scrubs your personal data from the web, confronting the world’s data brokers on your behalf. And unlike other services,
+Incogni helps remove your sensitive information from all broker types
+, including those tricky People Search Sites.
+Help protect yourself from identity theft, spam calls, and health insurers raising your rates. Plus, just for Platformer readers:
+Get 55% off Incogni using code PLATFORMER.
+Governing
+A look at how an apparent DOGE power play to take over the US Copyright Office resulted in the installation of two MAGA officials who are known to be hostile to the tech industry.
+(Tina Nguyen /
+The Verge
+)
+One of Elon Musk’s advisers, Christopher Young, is earning between $100,000 and $1 million annually while also being a DOGE aide and helping to dismantle the CFPB, which regulates two of Musk’s biggest companies.
+(Jake Pearson /
+ProPublica
+)
+The CFPB has canceled plans to introduce rules that would limit the ability of US data brokers to sell sensitive information, including financial data, credit history and Social Security numbers.
+(Dell Cameron and Dhruv Mehrota /
+Wired
+)
+An investigation into how the Trump administration pressured Gambia and other African countries to expedite approvals for Musk’s Starlink by using foreign aid as leverage.
+Just terrible. (Joshua Kaplan, Brett Murphy, Justin Elliott and Alex Mierjeski /
+ProPublica
+)
+X continues to accept payments for subscription accounts from terrorist organizations and other groups banned from doing business in the US, a new report found.
+(Kate Conger /
+New York Times
+)
+A struggling tech company with ties to China, GD Culture Group, which recorded zero revenue last year, said it secured funding to buy up to $300 million of Trump’s memecoin $TRUMP.
+(David Yaffe-Bellany and Eric Lipton /
+New York Times
+)
+Trump said he asked Apple’s Tim Cook to stop building plants in India and increase production in the US instead.
+(Jordan Fabian and Sankalp Phartiyal / Bloomberg)
+The Trump administration has abruptly canceled several scientific research grants meant to fund studies tracking misinformation and other harmful content online.
+(Steven Lee Myers /
+New York Times
+)
+The Commerce Department warned companies around the world that using Huawei AI chips could trigger criminal penalties for violating US export controls, though the department reportedly said it was not a new rule, just a clarification.
+(Demetri Sevastopulo, Zijing Wu and Ryan McMorrow /
+Financial Times
+)
+The Kids Online Safety Act has been revived in the Senate.
+(Lauren Feiner /
+The Verge
+)
+Meta filed a motion to dismiss the antitrust case against it after the government rested its case
+. (Adi Robertson /
+The Verge
+)
+Meta attorney Mark Hansen blasted reporters Kara Swisher and Om Malik for alleged bias against Meta during the antitrust trial this week.
+Leaving me no choice but to blast Mark Hansen for his bias
+toward
+Meta. (Lauren Feiner /
+The Verge
+)
+A California judge sanctioned two law firms for the undisclosed use of AI after he received a brief that had “numerous false, inaccurate, and misleading” legal citations.
+(Emma Roth /
+The Verge
+)
+A lawyer for Anthropic apologized for using a citation hallucinated by Claude in its ongoing legal battle with music publishers.
+Bad! (Maxwell Zeff /
+TechCrunch
+)
+Pinterest’s deactivation of many accounts in recent weeks was due to an internal error, the company said.
+(Jess Weatherbed /
+The Verge
+)
+Soundcloud said it “has never used artist content to train AI models” in an update after artists reported changes to its terms of use could mean it reserves the right to use its content to train AI tools.
+(Wes Davis /
+The Verge
+)
+Soundcloud CEO Eliah Seton admitted its initial changes were too broad and said it was meant to focus on other uses of AI internally, not to allow third parties to scrape artist content.
+(Stuart Dredge /
+Music Ally
+)
+Tech companies are prioritizing the development of products over safety research, experts warn.
+(Hayden Field, Jonathan Vanian and Jennifer Elias / CNBC)
+A look at how DeepSeek founder Liang Wenfeng is threatening the US’s dominance in AI, earning him the nickname of “Tech Madman.”
+Admittedly it's not a very good nickname. (Bloomberg Businessweek)
+Chinese officials have reportedly told local tech companies that they intend to take a more active role overseeing AI data centers and the specialized chips in them.
+(Qianer Liu /
+The Information
+)
+Microsoft is reportedly set to avoid an antitrust fine, as EU regulators are likely to accept an offer on its Office and Teams products.
+(Foo Yun Chee / Reuters)
+The EU provisionally found that TikTok violated rules by failing to provide an ad library allowing for proper scrutiny of online advertising.
+(Barbara Moens /
+Financial Times
+)
+Apple is displaying a red exclamation mark icon to apps that support alternative payment options in the EU.
+Why not add a few skulls while they're at it? Maybe a knife with the blood emoji next to it? (Jess Weatherbed /
+The Verge
+)
+The Transparency & Consent Framework, a standard used by ad giants like Google, Microsoft, Amazon and X, is illegal, a Belgian court ruled.
+(
+Irish Council for Civil Liberties
+)
+Countries like Finland and Sweden are using waste heat from power-hungry data centers to provide heating for homes in towns.
+(Lars Paulsson, Kari Lundgren and Kati Pohjanpalo / Bloomberg)
+Industry
+Meta is reportedly delaying the rollout of its flagship AI model “Behemoth” as engineers struggle to significantly improve its capabilities.
+Meta truly appears to be losing the plot with AI lately. (Meghan Bobrowsky and Sam Schechner /
+Wall Street Journal
+)
+Meta released a massive chemistry dataset that it said it used to build a new AI model for scientists that can speed up the time needed to create new drugs.
+(Reed Albergotti /
+Semafor
+)
+Meta appointed Benjamin Joe, its longtime head of Southeast Asia, as its new regional vice president for the broader Asia-Pacific region.
+(Newley Purnell / Bloomberg)
+Threads is letting creators add up to five links to a bio.
+(Sarah Perez /
+TechCrunch
+)
+OpenAI released GPT-4.1 and GPT-4.1 mini in ChatGPT.
+(Maxwell Zeff /
+TechCrunch
+)
+Microsoft OneDrive and SharePoint users who have an active ChatGPT Plus, Pro, or Team subscription can connect their files to ChatGPT’s Deep Research feature.
+(Kevin Okemwa /
+Windows Central
+)
+OpenAI launched the Safety evaluations hub, pledging to publish the results of its internal AI model safety evaluations more regularly.
+Good! (Kyle Wiggers /
+TechCrunch
+)
+TikTok is reportedly working on a feature that would allow photos in messages, despite employees raising concerns about the potential for sextortion scams and other abuse.
+(Sylvia Varnham O’Regan and Kaya Yurieff /
+The Information
+)
+TikTok is launching in-app guided meditation exercises.
+(Aisha Malik /
+TechCrunch
+)
+Google has overtaken IBM as the leader in generative AI-related and agentic AI-related patents.
+(Ina Fried /
+Axios
+)
+YouTube introduced new ad formats for advertisers, including a new interactive product feed for shoppable TV ads.
+(Lauren Forristal /
+TechCrunch
+)
+YouTube launched a weekly top podcast shows chart.
+And yet Hard Fork isn't on it ... curious ... maybe
+subscribe
+and see if that does anything? (Zach Vallese / CNBC)
+Revenue from YouTube Shorts is on par with revenue relative to core YouTube in multiple countries and Shorts’ monetization now exceeds that of core YouTube, CEO Neal Mohan said.
+(Todd Spangler /
+Variety
+)
+Anthropic is reportedly set to release new versions of its two largest models, Claude Sonnet and Claude Opus, in the upcoming weeks.
+(Stephanie Palazzolo /
+The Information
+)
+Perplexity is partnering with PayPal to let users make purchases directly in chat.
+(MacKenzie Sigalos / CNBC)
+Apple’s next-gen CarPlay, CarPlay Ultra, is now available through a software update and in new Aston Martin vehicles in the US and Canada.
+(Benjamin Mayo /
+9to5Mac
+)
+Microsoft is shutting down access to Bing search data and decommissioning the Bing Search APIs as it pivots to focus on chatbots.
+(Paresh Dave /
+Wired
+)
+A Q&A with Salesforce co-founder and CEO Marc Benioff on how AI is disrupting work and his big bet on digital agents.
+(Stephen Morris /
+Financial Times
+)
+Roblox is opening up its Commerce APIs to some creators and letting them sell physical items from their games.
+(Jay Peters /
+The Verge
+)
+Mobile gamers increased their spending by 4 percent last year, while the number of downloads and new releases fell.
+(Vlad Savov / Bloomberg)
+Despite early predictions that AI would replace radiology jobs, Mayo Clinic is finding the tool to be helpful for human radiologists stead of replacing them.
+(Steve Lohr /
+New York Times
+)
+Those good posts
+For more good posts every day,
+follow Casey’s Instagram stories
+.
+(
+Link
+)
+(
+Link
+)
+(
+Link
+)
+Talk to us
+Send us tips, comments, questions, and rogue Grok opinions:
+casey@platformer.news
+. Read
+our ethics policy here
+.
+Sponsor a Newsletter
+
+
+====================================================================================================
+ARTICLE 15: The AIs have memory problems
+====================================================================================================
+Published: Wed, 14 May 2025 00:56:29 GMT
+Link: https://www.platformer.news/ai-memory-personalization-privacy-risks/
+----------------------------------------------------------------------------------------------------
+
+FULL TEXT:
+AI
+The AIs have memory problems
+And maybe not the ones you're thinking of
+Casey Newton
+May 13, 2025
+—
+9 min read
+A floppy disk with 1.44MB of memory. (Fredy Jacob / Unsplash)
+This post is for paying subscribers only
+Subscribe now
+Already have an account?
+Sign in
+
