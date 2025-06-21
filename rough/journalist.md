@@ -1,3 +1,5 @@
+Proposed schema of a Journalist persona
+```
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
@@ -143,3 +145,4 @@
   },
   "required": ["journalist_id", "basic_info", "version"]
 }
+```
