@@ -80,8 +80,10 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
     if not row:
         return "Error: Journalist not found."
     journalist_name = row[0]
+    
     # 2. Load model
     model, tokenizer = load_persona_model(journalist_name)
+
     # 3. Retrieve context from ChromaDB
     context = ""
     try:
@@ -96,13 +98,15 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
             context += doc + "\n"
     except Exception as e:
         print(e)
-        return "I do not know much about it."
+        return "No comments. I do not know much about it."
         pass  # For POC, skip if unavailable
+
     # 4. Construct prompt
     prompt = ""
     if context:
         prompt += f"[Reference examples]\n{context.strip()}\n\n"
     prompt += f"[User PR pitch]\n{pitch_text.strip()}\n\n[Response]\n"
+    
     # 5. Generate response
     input_ids = tokenizer.encode(prompt, return_tensors="pt")
     output = model.generate(
@@ -114,6 +118,7 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
         top_p=0.95,
     )
     full_text = tokenizer.decode(output[0], skip_special_tokens=True)
+
     # Extract only the new response portion after the [Response] tag
     response = full_text.split("[Response]", 1)[-1].strip()
     return response if response else full_text
