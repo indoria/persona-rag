@@ -68,7 +68,7 @@ def load_persona_model(journalist_name):
     tokenizer.pad_token = tokenizer.eos_token
     return model, tokenizer
 
-def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client, num_context=1, max_length=128, temperature=0.8):
+def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client, num_context=1, max_length=512, temperature=0.8):
     """
     Given journalist_id and pitch_text, generate a persona-driven response.
     Optionally retrieves context examples from ChromaDB.
@@ -98,11 +98,11 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
             context += doc + "\n"
     except Exception as e:
         print(e)
-        return "No comments. I do not know much about it."
+        #return "No comments. I do not know much about it."
         pass  # For POC, skip if unavailable
 
     # 4. Construct prompt
-    prompt = ""
+    prompt = "Hi there"
     if context:
         prompt += f"[Reference examples]\n{context.strip()}\n\n"
     prompt += f"[User PR pitch]\n{pitch_text.strip()}\n\n[Response]\n"

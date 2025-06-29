@@ -420,8 +420,7 @@ StudyPilot uses real-time assessments, GPT-powered tutoring, and multimodal feed
 StudyPilot is now available for institutions and individual students via subscription, with discounted access for Title I schools.
 
 For more information, visit: www.neuronforge.ai`
-        },
-        {
+        }, {
             title: "New Alzheimer’s Drug Shows Promising Results in Phase II Clinical Trial",
             body: `FOR IMMEDIATE RELEASE
 
@@ -434,8 +433,7 @@ Conducted across 8 U.S. research centers, the trial showed a 27% improvement in 
 “These results are encouraging and could represent a breakthrough for millions of patients,” said Dr. Elena Martinez, Chief Scientific Officer at BioNerva.
 
 The company plans to begin Phase III trials by Q1 2026, pending FDA guidance.`
-        },
-        {
+        }, {
             title: "Award-Winning Director Arjun Mehta Unveils “The Last Ember” at Cannes",
             body: `FOR IMMEDIATE RELEASE
 
@@ -448,8 +446,7 @@ Starring Tara Rao and Julian Marks, the film follows a war correspondent unravel
 “This is my most personal film yet—about truth, trauma, and redemption,” said Mehta at the press conference.
 
 The Last Ember will release in India, Europe, and North America on August 2, 2025.`
-        },
-        {
+        }, {
             title: "Tata Textiles Commits to Net Zero by 2040 with Major Green Transition Plan",
             body: `FOR IMMEDIATE RELEASE
 
@@ -462,8 +459,7 @@ The plan includes transitioning 70% of energy use to solar and wind by 2030, imp
 “We want to lead not just in fashion, but in responsible manufacturing,” said Kavita Deshmukh, MD of Tata Textiles.
 
 The initiative, titled Project Revive, is expected to cut over 1 million tons of CO₂ annually and create 12,000 green jobs.`
-        },
-        {
+        }, {
             title: "Ministry of Urban Affairs Announces ₹6,000 Cr Smart City Revamp Plan",
             body: `FOR IMMEDIATE RELEASE
 
@@ -476,6 +472,30 @@ Key initiatives include AI-based traffic control systems, public Wi-Fi in commer
 “India’s cities are growing fast—this plan ensures they grow smart and sustainably,” said Union Minister for Urban Affairs, Anjali Sinha.
 
 The revamped mission is expected to roll out in phases from September 2025.`
+        }, {
+            title: `Apple introduces AirPort Pro with Private Relay built in`,
+            body: `Apple introduces AirPort Pro with Private Relay built in
+Revolutionary home networking with hardware-based privacy protection and seamless Apple device integration
+CUPERTINO, CALIFORNIA — Apple today announced AirPort Pro, marking the company's return to home networking with a groundbreaking router that brings hardware-based privacy protection to every device on your home network. AirPort Pro features a custom-designed Apple silicon chip that enables Private Relay protection for all connected devices — not just Apple products — while delivering exceptional Wi-Fi 7 performance.
+"We believe privacy is a fundamental human right, and that protection shouldn't end at your device — it should extend to your entire home network," said Craig Federighi, Apple's senior vice president of Software Engineering. "AirPort Pro brings the privacy protection of iCloud Private Relay to every connected device in your home, while delivering the seamless setup and reliability our users expect."
+AirPort Pro uses Apple's custom N2 networking chip to process all internet traffic through hardware-encrypted tunnels, ensuring that no one — not even your internet service provider — can see your browsing activity. Unlike software VPN solutions, this hardware-based approach introduces virtually no latency while providing comprehensive protection for smart TVs, game consoles, and IoT devices that typically can't run privacy software.
+The device features a minimalist design crafted from a single piece of recycled aluminum, with intelligent thermal management that operates silently. Setup takes less than a minute using any iPhone, iPad, or Mac, with automatic configuration of optimal settings for Apple devices. The router supports the latest Wi-Fi 7 standard with speeds up to 46 Gbps, and includes four 10-gigabit Ethernet ports.
+AirPort Pro starts at $299 and will be available beginning Tuesday, June 24, at apple.com and Apple Store locations.`
+        }, {
+            title: `Apple unveils Apple Intelligence+ Premium with exclusive AI personas and productivity features`,
+            body: `Apple unveils Apple Intelligence+ Premium with exclusive AI personas and productivity features
+Advanced AI subscription service brings ChatGPT-7 integration and enhanced capabilities for $19.99/month
+CUPERTINO, CALIFORNIA — Apple today announced Apple Intelligence+ Premium, a new subscription tier that unlocks advanced AI capabilities across iPhone, iPad, and Mac. For $19.99 per month, users gain access to exclusive AI personas, unlimited ChatGPT-7 queries, and priority processing for all Apple Intelligence features.
+"Apple Intelligence+ Premium represents the next evolution in personal AI," said Greg Joswiak, Apple's senior vice president of Worldwide Marketing. "We're giving our users access to the most advanced AI capabilities available, with exclusive features you won't find anywhere else."
+The premium tier includes AI Personas — customizable AI assistants with distinct personalities and specialized knowledge domains. Users can choose from personas like "Creative Pro" for artistic endeavors, "Business Advisor" for professional tasks, or create custom personas. These advanced features require continuous cloud processing and are available exclusively to Apple Intelligence+ Premium subscribers.
+Additional premium features include:
+Priority queue access for all AI requests, reducing wait times by up to 80%
+Exclusive "Deep Think" mode that processes requests for up to 10 minutes for complex problems
+Advanced image generation with 8K resolution and no watermarks
+Early access to beta AI features before general release
+1TB of cloud storage for AI-generated content
+Standard Apple Intelligence features will remain free but may experience longer processing times during peak usage. Non-subscribers will be limited to 10 advanced AI queries per day starting in iOS 26.1.
+Apple Intelligence+ Premium will be available as a standalone subscription for $19.99/month or as part of the new Apple One Premier tier for $49.99/month. A 7-day free trial will be available at launch.`
         }
     ];
 

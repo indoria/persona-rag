@@ -12,8 +12,8 @@
 
 2. **Ingest corpus and fine-tune persona models**  
    ```
-   python data_ingestion/ingest.py (or python -m data_ingestion.ingest)
-   python -m data_ingestion/embed_corpus
+   python -m data_ingestion.ingest (or python data_ingestion/ingest.py)
+   python -m data_ingestion.embed_corpus
    python -m scripts.fine_tune_all
    ```
 
@@ -77,3 +77,17 @@ pyenv versions
 [Sample 1](https://prlab.co/blog/examples-of-press-release-by-type/)
 [Sample 2, and classification](https://channelvmedia.com/blog/press-release-examples-by-type/)
 [Tips](https://www.contentgrip.com/how-to-write-a-press-release-examples/)
+
+
+## NLP : Spacy en_core_web_sm vs en_core_web_lg
+```
+The en_core_web_lg (788 MB) compared to en_core_web_sm (10 MB): Around 79 times bigger, and hence a bit slower to load
+
+LAS: 90.07% vs 89.66%
+POS: 96.98% vs 96.78%
+UAS: 91.83% vs 91.53%
+NER F-score: 86.62% vs 85.86%
+NER precision: 87.03% vs 86.33%
+NER recall: 86.20% vs 85.39%
+All that while en_core_web_lg is 79 times larger, hence loads a lot more slowly.
+```
