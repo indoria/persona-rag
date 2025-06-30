@@ -2,6 +2,7 @@ from patch.sqlite3 import sqlite3
 import os
 from dotenv import load_dotenv
 from db.chroma_embedders import SentenceTransformerEmbedder, OpenAIEmbedder
+from lib.embed.embedders.azureOpenAIEmbedder import AzureOpenAIEmbedder
 
 load_dotenv()
 
@@ -105,5 +106,16 @@ def embed_all_corpus_documents():
             conn.close()
             print("SQLite database connection closed.")
 
+def azureEmbedder():
+    deployment_name = os.getenv('AZURE_AI_DEPLOYMENT_NAME', 'text-embedding-ada-002')
+
+    embedder = AzureOpenAIEmbedder(deployment_name=deployment_name)
+    texts = ["hello world"]
+    embedding: List[List[float]] = embedder._encode(texts)
+
+    print("Embedding for 'hello world':")
+    print(embedding[0])
+
 if __name__ == "__main__":
-    embed_all_corpus_documents()
+    #embed_all_corpus_documents()
+    azureEmbedder()

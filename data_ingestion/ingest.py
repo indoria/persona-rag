@@ -3,6 +3,7 @@ import logging
 import json
 from patch.sqlite3 import sqlite3
 import shutil
+import uuid
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -54,21 +55,22 @@ def init_db(recreate=False):
         if conn:
             conn.close()
 
-def get_or_create_journalist(conn, name, bio="", pic="", role=""):
+def get_or_create_journalist(conn, name, bio="", pic=""):
     c = conn.cursor()
-    c.execute("SELECT id, bio, pic, role FROM journalists WHERE name=?", (name,))
+    c.execute("SELECT id, bio, pic FROM journalists WHERE name_full=?", (name,))
     row = c.fetchone()
     if row:
-        journalist_id, current_bio, current_pic, current_role = row
-        if current_bio != bio or current_pic != pic or current_role != role:
-            c.execute("UPDATE journalists SET bio=?, pic=?, role=? WHERE id=?", (bio, pic, role, journalist_id))
+        journalist_id, current_bio, current_pic = row
+        if current_bio != bio or current_pic != pic:
+            c.execute("UPDATE journalists SET bio=?, pic=? WHERE id=?", (bio, pic, journalist_id))
             conn.commit()
             logger.info(f"Journalist '{name}' already exists with ID: {journalist_id}. Basic info updated.")
         else:
             logger.info(f"Journalist '{name}' already exists with ID: {journalist_id}. No basic info update needed.")
         return journalist_id
     else:
-        c.execute("INSERT INTO journalists (name, bio, pic, role) VALUES (?, ?, ?, ?)", (name, bio, pic, role))
+        journalist_id = str(uuid.uuid4())
+        c.execute("INSERT INTO journalists (journalist_id, name_full, bio, pic) VALUES (?, ?, ?, ?)", (journalist_id, name, bio, pic))
         conn.commit()
         new_id = c.lastrowid
         logger.info(f"Created new journalist '{name}' with ID: {new_id}")
@@ -241,8 +243,7 @@ def ingest_data(persona_dir=PERSONA_DIR, corpus_dir=CORPUS_DIR, json_filter_list
                         conn,
                         journalist_name,
                         persona_data.get('bio', ''),
-                        persona_data.get('pic', ''),
-                        persona_data.get('role', '')
+                        persona_data.get('pic', '')
                     )
 
                     ingest_persona_data_details(journalist_id, persona_data, cursor, conn)

@@ -39,10 +39,10 @@ def analyze_pitch_api():
 def journalists():
     conn = get_db_conn()
     c = conn.cursor()
-    c.execute("SELECT id, name, bio, pic, role FROM journalists")
+    c.execute("SELECT id, name_full, bio, pic FROM journalists")
     rows = c.fetchall()
     conn.close()
-    res = [{"id": row[0], "name": row[1], "bio": row[2], "pic": row[3], "role": row[4]} for row in rows]
+    res = [{"id": row[0], "name": row[1], "bio": row[2], "pic": row[3], "role": "Journalist"} for row in rows]
     logger.info(f"Fetched journalists: {len(res)} found")
     return jsonify(res)
 
