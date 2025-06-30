@@ -6,8 +6,10 @@
 - ML Engineer : Create models requested by Data Scientist
 
 
+```
 Designers and explorers : Architect, Analyst, Scientist
 Workers : Data Engineer, BI dev, ML Engineer
+```
+[Data Team](https://www.youtube.com/watch?v=tyJ476aNCYU)
 
-
-Raw data -> Clean -> Convert into models (highly organized)
+- Raw data -> Clean -> Convert into models (highly organized)
