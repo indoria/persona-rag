@@ -17,7 +17,7 @@ class BaseEmbedder(ABC):
     def _encode(self, texts: list[str]) -> list[list[float]]:
         pass
 
-    def store_embedding(self, doc_id: str, journalist_id: str, text: str):
+    def store_embedding(self, doc_id: str, journalist_id: str, text: str, metadata: dict = {}):
         unique_id = f"{journalist_id}_{doc_id}"
         existing_ids = self.collection.get(ids=[unique_id], include=[])['ids']
         if existing_ids:
@@ -25,7 +25,7 @@ class BaseEmbedder(ABC):
             return
         try:
             embedding = self._encode([text])[0]
-            metadata = {"doc_id": doc_id, "journalist_id": journalist_id}
+            metadata = { "doc_id": doc_id, "journalist_id": journalist_id, **metadata }
             self.collection.add(
                 embeddings=[embedding],
                 metadatas=[metadata],

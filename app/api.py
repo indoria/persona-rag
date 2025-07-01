@@ -60,7 +60,6 @@ def _generate_response(journalist_id, pitch_text):
             max_length=512,
             temperature=0.8,
         )
-        # print(response);
         return {"status": "success", "response": response}
     except Exception as e:
         logger.error(f"Error generating persona response for journalist_id={journalist_id}: {str(e)}")

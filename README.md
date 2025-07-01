@@ -8,6 +8,7 @@
    source venv/bin/activate
    pip install -r requirements.txt
    python -m spacy download en_core_web_sm
+   python -c "import nltk; nltk.download('punkt')"
    ```
 
 2. **Ingest corpus and fine-tune persona models**  

@@ -10,6 +10,7 @@
 Designers and explorers : Architect, Analyst, Scientist
 Workers : Data Engineer, BI dev, ML Engineer
 ```
-[Data Team](https://www.youtube.com/watch?v=tyJ476aNCYU)
+- [Data Team](https://www.youtube.com/watch?v=tyJ476aNCYU)
+- [Data Cleaning](https://www.youtube.com/watch?v=y9wFFD2bXQM)
 
 - Raw data -> Clean -> Convert into models (highly organized)

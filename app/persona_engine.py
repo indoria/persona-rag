@@ -1,4 +1,9 @@
 import logging
+from app.prompts import load_prompt
+from lib.embed.embedders.azureOpenAIEmbedder import AzureOpenAIEmbedder
+from data_ingestion.similarity_search import search_similar_chunks
+from lib.llm.AzureGPT4 import get_azure_gpt4_response
+
 
 logger = logging.getLogger(__name__)
 
@@ -68,14 +73,14 @@ def load_persona_model(journalist_name):
     tokenizer.pad_token = tokenizer.eos_token
     return model, tokenizer
 
-def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client, num_context=1, max_length=512, temperature=0.8):
+def generate_persona_response_local(journalist_id, pitch_text, db_conn, chroma_client, num_context=1, max_length=512, temperature=0.8):
     """
     Given journalist_id and pitch_text, generate a persona-driven response.
     Optionally retrieves context examples from ChromaDB.
     """
     # 1. Get journalist name
     c = db_conn.cursor()
-    c.execute("SELECT name FROM journalists WHERE id=?", (journalist_id,))
+    c.execute("SELECT name_full FROM journalists WHERE id=?", (journalist_id,))
     row = c.fetchone()
     if not row:
         return "Error: Journalist not found."
@@ -83,6 +88,7 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
     
     # 2. Load model
     model, tokenizer = load_persona_model(journalist_name)
+    
 
     # 3. Retrieve context from ChromaDB
     context = ""
@@ -122,3 +128,40 @@ def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client,
     # Extract only the new response portion after the [Response] tag
     response = full_text.split("[Response]", 1)[-1].strip()
     return response if response else full_text
+
+def generate_persona_response(journalist_id, pitch_text, db_conn, chroma_client, num_context=1, max_length=512, temperature=0.8):
+    """
+    Given journalist_id and pitch_text, generate a persona-driven response.
+    Optionally retrieves context examples from ChromaDB.
+    """
+    
+    c = db_conn.cursor()
+    c.execute("SELECT name_full FROM journalists WHERE id=?", (journalist_id,))
+    row = c.fetchone()
+    if not row:
+        return "Error: Journalist not found."
+    journalist_name = row[0]
+    journalist_name_processed = journalist_name.lower().replace(" ", "_")
+
+    context = ""
+    try:
+        col = chroma_client.get_collection("corpus_embeddings")
+        # results = col.query(
+        #     query_texts=[pitch_text],
+        #     n_results=num_context,
+        #     where={"journalist_id": journalist_id},
+        # )
+        
+        deployment_name = os.getenv('AZURE_AI_DEPLOYMENT_NAME', 'text-embedding-ada-002')
+        embedder = AzureOpenAIEmbedder(deployment_name=deployment_name)
+        results = search_similar_chunks("Apple released a new IPhone. It is the best IPhone to be released.", embedder)
+        for result in results:
+            context += result["document"] + "\n"
+    except Exception as e:
+        print(e)
+        return "No comments. I do not know much about it."
+
+    prompt = load_prompt(journalist_name_processed, context, pitch_text)
+    response = get_azure_gpt4_response(prompt)
+    
+    return response

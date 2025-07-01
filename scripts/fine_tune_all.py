@@ -20,7 +20,7 @@ def get_corpus_for_journalist(jid):
 def get_journalists():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute("SELECT id, name FROM journalists")
+    c.execute("SELECT id, name_full FROM journalists")
     js = c.fetchall()
     conn.close()
     return js
